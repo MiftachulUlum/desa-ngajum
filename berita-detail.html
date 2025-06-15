@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="csrf-token" content="" />
+    <!-- SEO Tags -->
+    <title>Pelatihan Digital Marketing Untuk UMKM - Berita Desa Digital</title>
+    <meta
+      name="description"
+      content="Pemerintah Desa Digital mengadakan pelatihan digital marketing untuk pelaku UMKM desa. Pelatihan ini bertujuan untuk meningkatkan kemampuan para pelaku UMKM dalam memasarkan produk mereka secara online."
+    />
+    <meta name="keywords" content="desa digital, berita desa, UMKM, pelatihan, digital marketing" />
+    <meta name="author" content="Desa Digital" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Pelatihan Digital Marketing Untuk UMKM - Berita Desa Digital" />
+    <meta
+      property="og:description"
+      content="Pemerintah Desa Digital mengadakan pelatihan digital marketing untuk pelaku UMKM desa. Pelatihan ini bertujuan untuk meningkatkan kemampuan para pelaku UMKM dalam memasarkan produk mereka secara online."
+    />
+    <meta property="og:image" content="src/images/berita/1.webp" />
+    <meta property="article:published_time" content="2023-10-15T09:00:00+07:00" />
+    <meta property="article:section" content="Kegiatan" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pelatihan Digital Marketing Untuk UMKM - Berita Desa Digital" />
+    <meta
+      name="twitter:description"
+      content="Pemerintah Desa Digital mengadakan pelatihan digital marketing untuk pelaku UMKM desa. Pelatihan ini bertujuan untuk meningkatkan kemampuan para pelaku UMKM dalam memasarkan produk mereka secara online."
+    />
+    <meta name="twitter:image" content="src/images/berita/1.webp" />
+    <!-- Favicon -->
+    <link rel="icon"  type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180"  />
+    <link rel="icon" type="image/png" sizes="32x32"  />
+    <link rel="icon" type="image/png" sizes="16x16"  />
+    <meta name="theme-color" content="#047857" />
+    <!-- Fonts - Upgraded with modern combinations -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Base Stylesheet -->
+    <link href="src/css/output.css" rel="stylesheet" />
+    <!-- Additional Styles -->
+    <link rel="stylesheet" href="ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="npm/aos-2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="npm/aos-2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="npm/swiper-10/swiper-bundle.min.css" />
+  </head>
+  <body class="font-sans antialiased bg-gray-50">
+    <!-- Subtle background pattern using SVG instead of image -->
+    <div class="fixed inset-0 -z-10 bg-dots-pattern opacity-10"></div>
+    <div class="min-h-screen flex flex-col">
+      <!-- Enhanced Header/Navigation -->
+      <header class="fixed top-0 z-50 w-full header-nav">
+        <!-- Navigation content goes here (same as your berita.html) -->
+        <nav x-data="{ mobileMenuOpen: false, scrolled: false }" @scroll.window="scrolled = window.pageYOffset > 20" class="sticky top-0 z-50 bg-white shadow-sm py-2 transition-all duration-200" :class="{ 'py-1 shadow-md': scrolled }">
+          <!-- Navigation content - Reuse from berita.html -->
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+              <!-- Logo dengan efek hover -->
+              <div class="flex items-center">
+                <a class='flex items-center transition-transform hover:-translate-y-0.5 duration-200' href='index.html'>
+                  <div class="flex items-center">
+                    <span class="text-emerald-600 font-bold text-2xl mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="text-emerald-600 font-bold text-xl">Desa Digital</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Desktop Navigation Links -->
+              <div class="hidden lg:flex lg:items-center">
+                <div class="flex items-center space-x-6 mr-8">
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='index.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                        />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Beranda </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='profile.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Profil </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='berita.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-emerald-500 text-emerald-600 font-semibold transition duration-200"> Berita </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='umkm.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> UMKM </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='layanan.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Layanan </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='statistik.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                        />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Statistik </span>
+                  </a>
+                </div>
+                <!-- Login/Register Buttons -->
+                <div class="flex items-center border-l border-gray-200 pl-6 ml-6 space-x-4">
+                  <a class='text-sm font-medium px-5 py-2 text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 border border-emerald-200 rounded-lg transition-colors duration-200' href='login.html'> Masuk </a>
+                  <a class='text-sm font-medium px-5 py-2 text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm hover:shadow transition-all duration-200' href='register.html'> Daftar </a>
+                </div>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="lg:hidden">
+                <button
+                  @click="mobileMenuOpen = !mobileMenuOpen"
+                  class="inline-flex items-center justify-center p-2 rounded-lg text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500 transition duration-150"
+                >
+                  <span class="sr-only">Buka menu</span>
+                  <svg class="h-6 w-6" :class="{'hidden': mobileMenuOpen, 'block': !mobileMenuOpen}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                  <svg class="h-6 w-6" :class="{'block': mobileMenuOpen, 'hidden': !mobileMenuOpen}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Breadcrumbs -->
+      <div class="bg-white py-1 border-gray-100 mt-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav class="py-2" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm">
+              <li>
+                <a class='flex items-center text-gray-500 hover:text-emerald-600 transition-colors duration-200' href='index.html'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  Beranda
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a class='flex items-center text-gray-500 hover:text-emerald-600 transition-colors duration-200' href='berita.html'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                  </svg>
+                  Berita
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-emerald-600 font-medium line-clamp-1 max-w-[280px] sm:max-w-md"> Pelatihan Digital Marketing Untuk UMKM </span>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- Hero Section with Clean Image (No Text Overlay) -->
+      <div class="w-full relative">
+        <div class="w-full h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden">
+          <img src="src/images/berita/1.webp" alt="Pelatihan Digital Marketing Untuk UMKM" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <!-- Main Content with Sidebar Layout -->
+      <div class="bg-white py-8 md:py-12 -mt-0">
+        <div class="max-w-7xl pt-4 mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content Column -->
+            <div class="lg:col-span-2">
+              <!-- Article Title and Category Section -->
+              <div class="mb-8">
+                <!-- Category Badge with Matching Style -->
+                <a class='inline-flex items-center px-2.5 py-1.5 rounded-md text-xs font-medium text-white bg-emerald-500 border-emerald-600 shadow-md border-l-4 mb-4' href='berita_kategori-Kegiatan.html'>
+                  <i class="fas fa-calendar-check mr-1"></i>
+                  <span>Kegiatan</span>
+                </a>
+                <!-- Title with Reduced Size -->
+                <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">Pelatihan Digital Marketing Untuk UMKM</h1>
+                <!-- Date & Share Button Row - Properly Aligned -->
+                <div class="flex items-center justify-between border-b border-gray-100 pb-5">
+                  <!-- Date -->
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <i class="far fa-calendar text-emerald-600"></i>
+                    <span class="text-sm">15 Oktober 2023</span>
+                  </div>
+                  <!-- Share Button -->
+                  <div x-data="{ shareOpen: false }" class="relative">
+                    <button @click="shareOpen = !shareOpen" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-emerald-50 text-gray-500 hover:text-emerald-500 transition-colors">
+                      <i class="fas fa-share-alt text-[14px]"></i>
+                      <span class="text-sm font-medium">Bagikan</span>
+                    </button>
+                    <!-- Share Menu -->
+                    <div x-cloak x-show="shareOpen" class="absolute z-50 right-0 mt-2 bg-white rounded-xl shadow-lg border border-gray-100 w-48 p-1.5">
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://example.com/berita-detail.html"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center gap-3 p-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors group"
+                      >
+                        <span class="w-8 h-8 flex items-center justify-center bg-blue-500/10 text-blue-500 rounded-full group-hover:scale-110 transition-transform">
+                          <i class="fab fa-facebook-f text-[16px]"></i>
+                        </span>
+                        <span class="font-medium">Facebook</span>
+                      </a>
+                      <a
+                        href="https://twitter.com/intent/tweet?url=https://example.com/berita-detail.html&text=Pelatihan Digital Marketing Untuk UMKM"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center gap-3 p-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors group"
+                      >
+                        <span class="w-8 h-8 flex items-center justify-center bg-sky-500/10 text-sky-500 rounded-full group-hover:scale-110 transition-transform">
+                          <i class="fab fa-twitter text-[16px]"></i>
+                        </span>
+                        <span class="font-medium">Twitter</span>
+                      </a>
+                      <a
+                        href="https://wa.me/?text=Pelatihan Digital Marketing Untuk UMKM - https://example.com/berita-detail.html"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center gap-3 p-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors group"
+                      >
+                        <span class="w-8 h-8 flex items-center justify-center bg-green-500/10 text-green-500 rounded-full group-hover:scale-110 transition-transform">
+                          <i class="fab fa-whatsapp text-[16px]"></i>
+                        </span>
+                        <span class="font-medium">WhatsApp</span>
+                      </a>
+                      <a
+                        href="https://t.me/share/url?url=https://example.com/berita-detail.html&text=Pelatihan Digital Marketing Untuk UMKM"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center gap-3 p-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors group"
+                      >
+                        <span class="w-8 h-8 flex items-center justify-center bg-blue-400/10 text-blue-400 rounded-full group-hover:scale-110 transition-transform">
+                          <i class="fab fa-telegram text-[16px]"></i>
+                        </span>
+                        <span class="font-medium">Telegram</span>
+                      </a>
+                      <button onclick="copyToClipboard('https://example.com/berita-detail.html')" class="flex items-center gap-3 p-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg transition-colors w-full group">
+                        <span class="w-8 h-8 flex items-center justify-center bg-gray-500/10 text-gray-500 rounded-full group-hover:scale-110 transition-transform">
+                          <i class="far fa-copy text-[16px]"></i>
+                        </span>
+                        <span class="font-medium">Salin Link</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Article Content -->
+              <div class="prose prose-emerald lg:prose-lg max-w-none mx-auto mb-10">
+                <p>
+                  Pemerintah Desa Digital mengadakan pelatihan digital marketing untuk pelaku UMKM desa pada hari Minggu, 15 Oktober 2023 bertempat di Balai Desa Digital. Pelatihan ini bertujuan untuk meningkatkan kemampuan para pelaku UMKM
+                  dalam memasarkan produk mereka secara online.
+                </p>
+                <p>Acara yang dihadiri oleh 50 peserta dari berbagai sektor UMKM ini menghadirkan beberapa narasumber yang kompeten di bidang digital marketing, antara lain:</p>
+                <ul>
+                  <li>Bapak Ahmad Fauzi, S.Kom - Digital Marketing Specialist</li>
+                  <li>Ibu Siti Nurhasanah, M.M - Praktisi E-commerce</li>
+                  <li>Bapak Deden Sunandar - Pelaku UMKM Sukses</li>
+                </ul>
+                <p>Dalam pelatihan ini, para peserta mendapatkan materi mengenai:</p>
+                <ol>
+                  <li>Dasar-dasar digital marketing</li>
+                  <li>Strategi pemasaran di media sosial (Facebook, Instagram, TikTok)</li>
+                  <li>Cara membuat konten yang menarik untuk produk UMKM</li>
+                  <li>Teknik fotografi produk sederhana menggunakan smartphone</li>
+                  <li>Optimasi toko online di marketplace</li>
+                </ol>
+                <h3>Pentingnya Digital Marketing untuk UMKM</h3>
+                <p>
+                  Di era digitalisasi seperti sekarang, kehadiran online menjadi sangat penting bagi pelaku UMKM. Melalui digital marketing, UMKM dapat menjangkau pasar yang lebih luas dengan biaya yang relatif terjangkau. Selain itu,
+                  digital marketing juga memungkinkan UMKM untuk berkomunikasi langsung dengan konsumen dan mendapatkan umpan balik yang cepat.
+                </p>
+                <blockquote>
+                  <p>
+                    "Kami berharap dengan adanya pelatihan ini, para pelaku UMKM di Desa Digital dapat meningkatkan penjualan dan memperluas jangkauan pasar mereka melalui pemanfaatan teknologi digital," ujar Kepala Desa Digital dalam
+                    sambutannya.
+                  </p>
+                </blockquote>
+                <h3>Respons Peserta</h3>
+                <p>Para peserta pelatihan memberikan respons positif terhadap kegiatan ini. Banyak di antara mereka yang mengaku mendapatkan wawasan baru tentang cara memasarkan produk mereka secara online.</p>
+                <p>
+                  "Saya sangat senang bisa mengikuti pelatihan ini. Sebelumnya saya hanya menjual produk secara offline, tapi sekarang saya jadi tahu bagaimana cara memasarkan produk saya di Instagram dan marketplace," kata Ibu Tini, salah
+                  satu peserta yang merupakan pengrajin anyaman bambu.
+                </p>
+                <h3>Rencana Tindak Lanjut</h3>
+                <p>
+                  Sebagai tindak lanjut dari pelatihan ini, Pemerintah Desa Digital akan membentuk komunitas digital marketing UMKM desa yang akan mendampingi para pelaku UMKM dalam mengimplementasikan strategi digital marketing yang telah
+                  dipelajari. Selain itu, akan diadakan juga sesi mentoring secara berkala untuk memastikan keberlanjutan program ini.
+                </p>
+                <p>Pelatihan digital marketing ini merupakan bagian dari program "UMKM Desa Go Digital" yang dicanangkan oleh Pemerintah Desa Digital dalam upaya meningkatkan perekonomian desa melalui pemberdayaan UMKM.</p>
+              </div>
+              <!-- Author Section (Moved to below content) -->
+              <div class="border-t border-gray-100 pt-6 mt-10">
+                <div class="flex items-center gap-4">
+                  <div class="relative flex-shrink-0">
+                    <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white ring-4 ring-emerald-50 shadow-md">
+                      <i class="fas fa-user text-lg"></i>
+                    </div>
+                    <div class="absolute -bottom-1 -right-1 h-4 w-4 md:h-5 md:w-5 bg-green-500 border-[3px] border-white rounded-full shadow-sm"></div>
+                  </div>
+                  <div class="min-w-0">
+                    <div class="flex items-center flex-wrap gap-2">
+                      <h3 class="text-base md:text-lg font-bold text-gray-900 break-words">Admin Desa</h3>
+                      <span class="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 rounded-full text-[10px] md:text-xs font-semibold bg-emerald-50 text-emerald-600">
+                        <i class="fas fa-check-circle text-[8px] md:text-[10px]"></i>
+                        Admin Desa
+                      </span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">Penulis di Desa Digital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sidebar Column -->
+            <div class="lg:col-span-1">
+              <!-- Berita Terkait -->
+              <div class="bg-white rounded-xl shadow-sm p-5 mb-6 border border-gray-100 sticky top-4">
+                <h3 class="font-semibold text-gray-900 mb-6 flex items-center gap-2 border-b border-gray-100 pb-3">
+                  <i class="fas fa-newspaper text-emerald-500"></i>
+                  Berita Terkait
+                </h3>
+                <div class="space-y-5">
+                  <a class='flex gap-3 group' href='berita-detail.html'>
+                    <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+                      <img src="src/images/berita/4.webp" alt="Lomba 17 Agustus Meriahkan HUT RI ke-78" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                    </div>
+                    <div class="min-w-0">
+                      <h4 class="text-sm font-medium line-clamp-2 group-hover:text-emerald-600 transition-colors">Lomba 17 Agustus Meriahkan HUT RI ke-78</h4>
+                      <div class="flex items-center mt-1 text-xs text-gray-500">
+                        <i class="far fa-calendar text-[9px] mr-1"></i>
+                        20 Agu 2023
+                      </div>
+                    </div>
+                  </a>
+                  <a class='flex gap-3 group' href='berita-detail.html'>
+                    <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+                      <img src="src/images/berita/3.webp" alt="Program Vaksinasi Booster di Balai Desa" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                    </div>
+                    <div class="min-w-0">
+                      <h4 class="text-sm font-medium line-clamp-2 group-hover:text-emerald-600 transition-colors">Program Vaksinasi Booster di Balai Desa</h4>
+                      <div class="flex items-center mt-1 text-xs text-gray-500">
+                        <i class="far fa-calendar text-[9px] mr-1"></i>
+                        15 Sep 2023
+                      </div>
+                    </div>
+                  </a>
+                  <a class='flex gap-3 group' href='berita-detail.html'>
+                    <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+                      <img src="src/images/berita/2.webp" alt="Rapat Musyawarah Pembangunan Desa 2023" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                    </div>
+                    <div class="min-w-0">
+                      <h4 class="text-sm font-medium line-clamp-2 group-hover:text-emerald-600 transition-colors">Rapat Musyawarah Pembangunan Desa 2023</h4>
+                      <div class="flex items-center mt-1 text-xs text-gray-500">
+                        <i class="far fa-calendar text-[9px] mr-1"></i>
+                        28 Sep 2023
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Kategori -->
+              <div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
+                <h3 class="font-semibold text-gray-900 mb-6 flex items-center gap-2 border-b border-gray-100 pb-3">
+                  <i class="fas fa-folder text-emerald-500"></i>
+                  Kategori
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <a class='px-3 py-1.5 text-xs rounded-md transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-600' href='berita_kategori-Umum.html'>
+                    <i class="fas fa-globe text-[10px]"></i>
+                    Umum
+                  </a>
+                  <a class='px-3 py-1.5 text-xs rounded-md transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-1.5 bg-amber-50 text-amber-600' href='berita_kategori-Pengumuman.html'>
+                    <i class="fas fa-bullhorn text-[10px]"></i>
+                    Pengumuman
+                  </a>
+                  <a class='px-3 py-1.5 text-xs rounded-md transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-600' href='berita_kategori-Kegiatan.html'>
+                    <i class="fas fa-calendar-check text-[10px]"></i>
+                    Kegiatan
+                  </a>
+                  <a class='px-3 py-1.5 text-xs rounded-md transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-1.5 bg-rose-50 text-rose-600' href='berita_kategori-Infrastruktur.html'>
+                    <i class="fas fa-road text-[10px]"></i>
+                    Infrastruktur
+                  </a>
+                  <a class='px-3 py-1.5 text-xs rounded-md transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-1.5 bg-sky-50 text-sky-600' href='berita_kategori-Kesehatan.html'>
+                    <i class="fas fa-heartbeat text-[10px]"></i>
+                    Kesehatan
+                  </a>
+                  <a class='px-3 py-1.5 text-xs rounded-md transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-1.5 bg-purple-50 text-purple-600' href='berita_kategori-Pendidikan.html'>
+                    <i class="fas fa-graduation-cap text-[10px]"></i>
+                    Pendidikan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Enhanced Footer -->
+      <footer class="bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-200">
+        <!-- Back to top button -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <button
+            id="back-to-top"
+            class="absolute -top-5 right-8 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-400 opacity-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+        </div>
+        <!-- Main footer content -->
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kolom 1: Tentang Desa (larger size) -->
+            <div class="md:col-span-1 lg:col-span-1">
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Tentang Desa</h3>
+              <div class="mt-5">
+                <img src="src/images/logo-desa.jpg" alt="Desa Digital" class="h-16 w-auto mb-4 object-contain" />
+                <p class="text-lg text-gray-700 font-medium mb-2">Desa Digital</p>
+                <p class="mt-3 text-sm text-gray-500 flex items-center group">
+                  <span class="flex items-center justify-center bg-emerald-100 text-emerald-500 h-8 w-8 rounded-full mr-3 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="group-hover:text-emerald-600 transition duration-300">+62 878 1545 4498</span>
+                </p>
+                <p class="mt-2 text-sm text-gray-500 flex items-center group">
+                  <span class="flex items-center justify-center bg-emerald-100 text-emerald-500 h-8 w-8 rounded-full mr-3 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="group-hover:text-emerald-600 transition duration-300">cepatberes2024@gmail.com</span>
+                </p>
+              </div>
+            </div>
+            <!-- Kolom 2: Link Cepat -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Akses Cepat</h3>
+              <ul class="mt-5 space-y-3">
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='index.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Beranda
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='profile.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Profil Desa
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='berita.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Berita
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='umkm.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    UMKM
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='statistik.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Statistik Desa
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Kolom 3: Layanan (5 daftar layanan) -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Layanan Desa</h3>
+              <ul class="mt-5 space-y-3">
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='layanan.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Administrasi Desa
+                  </a>
+                </li>
+                <li>
+                  <a href="pengaduan.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Pengaduan Warga
+                  </a>
+                </li>
+                <li>
+                  <a href="bantuan.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Cek Bantuan Sosial
+                  </a>
+                </li>
+                <li>
+                  <a href="layanan-publik.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Pelayanan Publik
+                  </a>
+                </li>
+                <li>
+                  <a href="dokumen.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Permohonan Dokumen
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Updated Copyright section -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between items-center">
+              <p class="text-sm text-gray-500 mb-4 md:mb-0">&copy; 2023 Desa Digital. Hak Cipta Dilindungi.</p>
+              <!-- Social Media Icons -->
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-twitter text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-youtube text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript Dependencies -->
+    <script src="npm/alpinejs-3.13.1/dist/cdn.min.js" defer></script>
+    <script src="npm/swiper-10/swiper-bundle.min.js"></script>
+    <script src="npm/sweetalert2-11.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>

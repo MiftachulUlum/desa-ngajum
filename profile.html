@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="csrf-token" content="" />
+    <!-- SEO Tags -->
+    <title>Profil Desa - Desa Digital</title>
+    <meta name="description" content="Profil Desa Digital - Informasi tentang sejarah, visi misi, dan struktur pemerintahan desa" />
+    <meta name="keywords" content="desa digital, profil desa, pemerintahan desa, desa, layanan desa, berita desa, UMKM desa" />
+    <meta name="author" content="Desa Digital" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Profil Desa - Desa Digital" />
+    <meta property="og:description" content="Informasi tentang sejarah, visi misi, dan struktur pemerintahan Desa Digital" />
+    <meta property="og:image"  />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Profil Desa - Desa Digital" />
+    <meta name="twitter:description" content="Informasi tentang sejarah, visi misi, dan struktur pemerintahan Desa Digital" />
+    <meta name="twitter:image"  />
+    <!-- Favicon -->
+    <link rel="icon"  type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180"  />
+    <link rel="icon" type="image/png" sizes="32x32"  />
+    <link rel="icon" type="image/png" sizes="16x16"  />
+    <meta name="theme-color" content="#047857" />
+    <!-- Fonts - Upgraded with modern combinations -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Base Stylesheet -->
+    <link href="src/css/output.css" rel="stylesheet" />
+    <!-- Additional Styles -->
+    <link rel="stylesheet" href="ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="npm/aos-2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="npm/aos-2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="npm/swiper-10/swiper-bundle.min.css" />
+  </head>
+  <body class="font-sans antialiased bg-gray-50">
+    <!-- Subtle background pattern using SVG instead of image -->
+    <div class="fixed inset-0 -z-10 bg-dots-pattern opacity-10"></div>
+    <div class="min-h-screen flex flex-col">
+      <!-- Enhanced Header/Navigation -->
+      <header class="fixed top-0 z-50 w-full header-nav">
+        <!-- Navigation content goes here -->
+        <nav x-data="{ mobileMenuOpen: false, scrolled: false }" @scroll.window="scrolled = window.pageYOffset > 20" class="sticky top-0 z-50 bg-white shadow-sm py-2 transition-all duration-200" :class="{ 'py-1 shadow-md': scrolled }">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+              <!-- Logo dengan efek hover -->
+              <div class="flex items-center">
+                <a class='flex items-center transition-transform hover:-translate-y-0.5 duration-200' href='index.html'>
+                  <div class="flex items-center">
+                    <span class="text-emerald-600 font-bold text-2xl mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="text-emerald-600 font-bold text-xl">Desa Digital</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Desktop Navigation Links -->
+              <div class="hidden lg:flex lg:items-center">
+                <div class="flex items-center space-x-6 mr-8">
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='index.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                        />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Beranda </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='profile.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-emerald-500 text-emerald-600 font-semibold transition duration-200"> Profil </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='berita.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Berita </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='umkm.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> UMKM </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='layanan.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Layanan </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='statistik.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                        />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Statistik </span>
+                  </a>
+                </div>
+                <!-- Login/Register Buttons -->
+                <div class="flex items-center border-l border-gray-200 pl-6 ml-6 space-x-4">
+                  <a class='text-sm font-medium px-5 py-2 text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 border border-emerald-200 rounded-lg transition-colors duration-200' href='login.html'> Masuk </a>
+                  <a class='text-sm font-medium px-5 py-2 text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm hover:shadow transition-all duration-200' href='register.html'> Daftar </a>
+                </div>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="lg:hidden">
+                <button
+                  @click="mobileMenuOpen = !mobileMenuOpen"
+                  class="inline-flex items-center justify-center p-2 rounded-lg text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500 transition duration-150"
+                >
+                  <span class="sr-only">Buka menu</span>
+                  <svg class="h-6 w-6" :class="{'hidden': mobileMenuOpen, 'block': !mobileMenuOpen}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                  <svg class="h-6 w-6" :class="{'block': mobileMenuOpen, 'hidden': !mobileMenuOpen}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Navigation Menu -->
+          <div
+            class="lg:hidden fixed inset-x-0 z-40 bg-white border-t border-gray-200 mt-2 shadow-lg"
+            x-show="mobileMenuOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-10"
+            x-cloak
+          >
+            <div class="pt-2 pb-3 space-y-1">
+              <!-- Menu item dengan ikon -->
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='index.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                <span class="text-base font-medium">Beranda</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 bg-emerald-50 text-emerald-700 transition-colors rounded-lg mx-2' href='profile.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-base font-medium">Profil Desa</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='berita.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
+                <span class="text-base font-medium">Berita</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='umkm.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span class="text-base font-medium">UMKM</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='layanan.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span class="text-base font-medium">Layanan</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='statistik.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
+                </svg>
+                <span class="text-base font-medium">Statistik</span>
+              </a>
+              <!-- Mobile Authentication Links dengan Style yang Diperbarui -->
+              <div class="pt-4 pb-3 border-t border-gray-200 mt-2">
+                <!-- Mobile Login/Register Buttons -->
+                <div class="grid grid-cols-1 gap-3 px-3 mt-3">
+                  <a class='flex justify-center items-center px-4 py-3 border-2 border-emerald-200 text-base font-medium rounded-lg text-emerald-600 bg-white hover:bg-emerald-50 transition-colors' href='login.html'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                    </svg>
+                    Masuk
+                  </a>
+                  <a class='flex justify-center items-center px-4 py-3 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-emerald-600 hover:bg-emerald-700 transition-colors' href='register.html'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                    </svg>
+                    Daftar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Breadcrumbs -->
+      <div class="bg-white py-1 border-gray-100 mt-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav class="py-2" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm">
+              <li>
+                <a class='flex items-center text-gray-500 hover:text-emerald-600 transition-colors duration-200' href='index.html'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  Beranda
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="flex items-center text-emerald-600 font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Profil Desa
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- Interactive CTA-Style Header Section -->
+      <section class="pt-12 pb-16 bg-gradient-to-br from-emerald-600 to-emerald-900 relative overflow-hidden">
+        <!-- Subtle Background Element -->
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full translate-x-1/3 translate-y-1/3"></div>
+        <!-- Content Container -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center">
+            <!-- Interactive Badge with Hover Effect -->
+            <div
+              class="relative inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-emerald-600/30 to-emerald-700/30 backdrop-blur-lg border border-white/30 shadow-xl group overflow-hidden cursor-pointer"
+              data-aos="fade-down"
+              onclick="document.getElementById('profile-overview').scrollIntoView({behavior: 'smooth'})"
+            >
+              <!-- Moving Light Effect on Hover -->
+              <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-all duration-1000 ease-in-out"></span>
+              <!-- Badge Content -->
+              <div class="relative z-10 flex items-center">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full mr-2.5 animate-pulse"></div>
+                <span class="text-white font-semibold text-sm tracking-wider">DESA DIGITAL</span>
+              </div>
+            </div>
+            <!-- Main Title with Interactive Element -->
+            <h1 class="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-white group" data-aos="fade-up">
+              <span class="relative inline-block">
+                Profil Desa Digital
+                <span class="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-300 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              </span>
+            </h1>
+            <!-- Description with Fade In Effect -->
+            <p class="mt-4 max-w-2xl mx-auto text-emerald-50 text-lg opacity-90" data-aos="fade-up" data-aos-delay="100">Mengenal sejarah, visi misi, dan struktur pemerintahan desa kami</p>
+          </div>
+        </div>
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden" style="height: 60px">
+          <svg class="absolute bottom-0 w-full h-full" viewBox="0 0 1440 120" preserveAspectRatio="none" fill="white">
+            <path
+              d="M0,96L60,85.3C120,75,240,53,360,48C480,43,600,53,720,69.3C840,85,960,107,1080,101.3C1200,96,1320,64,1380,48L1440,32L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <div x-data="{ activeTab: 'about', scrollToActiveTab() { setTimeout(() => { document.getElementById('tab-'+this.activeTab).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); }, 100); } }">
+        <!-- Tabs Section - Modern Mobile Slider -->
+        <section class="py-4 bg-white sticky top-0 z-30 shadow-sm" id="profile-overview">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative">
+              <!-- Tab Pills Container -->
+              <div id="tabPills" class="flex items-center gap-3 overflow-x-auto pb-2 pt-1 scrollbar-hide scroll-smooth px-2">
+                <button
+                  @click="activeTab = 'about'; $nextTick(() => scrollToActiveTab())"
+                  id="tab-about"
+                  :class="{
+                                'bg-emerald-500 text-white ring-2 ring-emerald-500/20 shadow-lg shadow-emerald-500/20': activeTab === 'about',
+                                'bg-gray-100/80 text-gray-600 hover:bg-gray-200 hover:text-gray-700 hover:shadow-md': activeTab !== 'about'
+                            }"
+                  class="shrink-0 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-300"
+                >
+                  <i class="fas fa-info-circle text-[12px]"></i>
+                  <span class="hidden sm:inline">Informasi</span>Umum
+                </button>
+                <button
+                  @click="activeTab = 'vision'; $nextTick(() => scrollToActiveTab())"
+                  id="tab-vision"
+                  :class="{
+                                'bg-emerald-500 text-white ring-2 ring-emerald-500/20 shadow-lg shadow-emerald-500/20': activeTab === 'vision',
+                                'bg-gray-100/80 text-gray-600 hover:bg-gray-200 hover:text-gray-700 hover:shadow-md': activeTab !== 'vision'
+                            }"
+                  class="shrink-0 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-300"
+                >
+                  <i class="fas fa-bullseye text-[12px]"></i>
+                  Visi & Misi
+                </button>
+                <button
+                  @click="activeTab = 'history'; $nextTick(() => scrollToActiveTab())"
+                  id="tab-history"
+                  :class="{
+                                    'bg-emerald-500 text-white ring-2 ring-emerald-500/20 shadow-lg shadow-emerald-500/20': activeTab === 'history',
+                                    'bg-gray-100/80 text-gray-600 hover:bg-gray-200 hover:text-gray-700 hover:shadow-md': activeTab !== 'history'
+                                }"
+                  class="shrink-0 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-300"
+                >
+                  <i class="fas fa-history text-[12px]"></i>
+                  Sejarah
+                </button>
+                <button
+                  @click="activeTab = 'structure'; $nextTick(() => scrollToActiveTab())"
+                  id="tab-structure"
+                  :class="{
+                                    'bg-emerald-500 text-white ring-2 ring-emerald-500/20 shadow-lg shadow-emerald-500/20': activeTab === 'structure',
+                                    'bg-gray-100/80 text-gray-600 hover:bg-gray-200 hover:text-gray-700 hover:shadow-md': activeTab !== 'structure'
+                                }"
+                  class="shrink-0 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-300"
+                >
+                  <i class="fas fa-sitemap text-[12px]"></i>
+                  <span class="hidden sm:inline">Struktur Pemerintahan</span><span class="sm:hidden">Struktur</span>
+                </button>
+                <button
+                  @click="activeTab = 'geography'; $nextTick(() => scrollToActiveTab())"
+                  id="tab-geography"
+                  :class="{
+                                    'bg-emerald-500 text-white ring-2 ring-emerald-500/20 shadow-lg shadow-emerald-500/20': activeTab === 'geography',
+                                    'bg-gray-100/80 text-gray-600 hover:bg-gray-200 hover:text-gray-700 hover:shadow-md': activeTab !== 'geography'
+                                }"
+                  class="shrink-0 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-300"
+                >
+                  <i class="fas fa-map-marked-alt text-[12px]"></i>
+                  <span class="hidden sm:inline">Geografis Desa</span><span class="sm:hidden">Geografis</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Tab Contents -->
+        <section class="py-8 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Informasi Umum Tab - Clean Modern Design with Enhanced Icons -->
+            <div x-show="activeTab === 'about'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+              <div class="bg-white">
+                <!-- Modern Header - Matched with UMKM Style -->
+                <div class="mb-5">
+                  <!-- Title and Button in One Row -->
+                  <div class="flex items-center justify-between mb-3">
+                    <!-- Left: Title Badge with Icon -->
+                    <div class="flex items-center">
+                      <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                      <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                        <i class="fas fa-home-alt text-emerald-600 mr-1.5"></i>
+                        TENTANG DESA
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Main Content with Clean Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
+                  <!-- Image Column with Slider Gallery & Header -->
+                  <div class="lg:col-span-5 xl:col-span-4">
+                    <!-- Village Identity at Top -->
+                    <div class="bg-gray-50 shadow-sm rounded-lg p-5 mb-4 border border-gray-100 text-center">
+                      <img src="src/images/logo-desa.jpg" alt="Logo Desa" class="h-20 w-20 object-contain mx-auto mb-3" />
+                      <h3 class="font-semibold text-xl text-gray-900 mb-1">Desa Digital</h3>
+                      <p class="text-sm text-gray-500">Kecamatan Contoh, Kabupaten Contoh</p>
+                    </div>
+                    <!-- Image Slider for Thumbnails -->
+                    <div
+                      x-data="{ currentIndex: 0, totalImages: 5, 
+                                                prev() { this.currentIndex = (this.currentIndex - 1 + this.totalImages) % this.totalImages },
+                                                next() { this.currentIndex = (this.currentIndex + 1) % this.totalImages },
+                                                touchStart: null,
+                                                touchEnd: null,
+                                                touchStart(e) { this.touchStart = e.changedTouches[0].screenX },
+                                                touchEnd(e) {
+                                                    this.touchEnd = e.changedTouches[0].screenX;
+                                                    if (this.touchStart - this.touchEnd > 50) {
+                                                        this.next();
+                                                    } else if (this.touchEnd - this.touchStart > 50) {
+                                                        this.prev();
+                                                    }
+                                                }
+                                            }"
+                      class="relative mb-4 rounded-lg overflow-hidden shadow-sm"
+                    >
+                      <!-- Main Slider Container -->
+                      <div class="relative aspect-w-16 aspect-h-9 bg-gray-100">
+                        <!-- Images -->
+                        <div
+                          x-show="currentIndex === 0"
+                          x-transition:enter="transition ease-out duration-300"
+                          x-transition:enter-start="opacity-0 transform scale-95"
+                          x-transition:enter-end="opacity-100 transform scale-100"
+                          class="w-full h-full"
+                        >
+                          <img src="src/images/hero/1.jpg" alt="Desa Digital - Image 1" class="w-full h-full object-cover" />
+                        </div>
+                        <div
+                          x-show="currentIndex === 1"
+                          x-transition:enter="transition ease-out duration-300"
+                          x-transition:enter-start="opacity-0 transform scale-95"
+                          x-transition:enter-end="opacity-100 transform scale-100"
+                          class="w-full h-full"
+                        >
+                          <img src="src/images/hero/2.jpg" alt="Desa Digital - Image 2" class="w-full h-full object-cover" />
+                        </div>
+                        <div
+                          x-show="currentIndex === 2"
+                          x-transition:enter="transition ease-out duration-300"
+                          x-transition:enter-start="opacity-0 transform scale-95"
+                          x-transition:enter-end="opacity-100 transform scale-100"
+                          class="w-full h-full"
+                        >
+                          <img src="src/images/hero/3.jpg" alt="Desa Digital - Image 3" class="w-full h-full object-cover" />
+                        </div>
+                        <div
+                          x-show="currentIndex === 3"
+                          x-transition:enter="transition ease-out duration-300"
+                          x-transition:enter-start="opacity-0 transform scale-95"
+                          x-transition:enter-end="opacity-100 transform scale-100"
+                          class="w-full h-full"
+                        >
+                          <img src="src/images/hero/4.jpg" alt="Desa Digital - Image 4" class="w-full h-full object-cover" />
+                        </div>
+                        <div
+                          x-show="currentIndex === 4"
+                          x-transition:enter="transition ease-out duration-300"
+                          x-transition:enter-start="opacity-0 transform scale-95"
+                          x-transition:enter-end="opacity-100 transform scale-100"
+                          class="w-full h-full"
+                        >
+                          <img src="src/images/hero/5.jpg" alt="Desa Digital - Image 5" class="w-full h-full object-cover" />
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <button @click.stop="prev()" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-colors z-20">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button @click.stop="next()" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-colors z-20">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <!-- Indicator Dots -->
+                      <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-20">
+                        <button
+                          @click.stop="currentIndex = 0"
+                          :class="{'bg-white': currentIndex === 0, 'bg-white/50 hover:bg-white/70': currentIndex !== 0 }"
+                          class="w-2.5 h-2.5 rounded-full transition-all"
+                          aria-label="Show image 1"
+                        ></button>
+                        <button
+                          @click.stop="currentIndex = 1"
+                          :class="{'bg-white': currentIndex === 1, 'bg-white/50 hover:bg-white/70': currentIndex !== 1 }"
+                          class="w-2.5 h-2.5 rounded-full transition-all"
+                          aria-label="Show image 2"
+                        ></button>
+                        <button
+                          @click.stop="currentIndex = 2"
+                          :class="{'bg-white': currentIndex === 2, 'bg-white/50 hover:bg-white/70': currentIndex !== 2 }"
+                          class="w-2.5 h-2.5 rounded-full transition-all"
+                          aria-label="Show image 3"
+                        ></button>
+                        <button
+                          @click.stop="currentIndex = 3"
+                          :class="{'bg-white': currentIndex === 3, 'bg-white/50 hover:bg-white/70': currentIndex !== 3 }"
+                          class="w-2.5 h-2.5 rounded-full transition-all"
+                          aria-label="Show image 4"
+                        ></button>
+                        <button
+                          @click.stop="currentIndex = 4"
+                          :class="{'bg-white': currentIndex === 4, 'bg-white/50 hover:bg-white/70': currentIndex !== 4 }"
+                          class="w-2.5 h-2.5 rounded-full transition-all"
+                          aria-label="Show image 5"
+                        ></button>
+                      </div>
+                      <!-- Swipe Area for Touch Devices -->
+                      <div class="absolute inset-0 z-10" x-on:touchstart="touchStart($event)" x-on:touchend="touchEnd($event)"></div>
+                    </div>
+                  </div>
+                  <!-- Information Column -->
+                  <div class="lg:col-span-7 xl:col-span-8 space-y-6">
+                    <!-- General Information Card -->
+                    <div class="bg-gray-50 shadow-sm rounded-lg overflow-hidden border border-gray-100">
+                      <div class="px-6 py-4 border-b border-gray-100 flex items-center">
+                        <i class="fas fa-file-alt text-emerald-500 mr-2"></i>
+                        <h3 class="font-medium text-gray-900">Informasi Desa</h3>
+                      </div>
+                      <div class="p-6">
+                        <dl class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-signature text-emerald-400 mr-1.5 text-xs"></i>
+                              Nama Desa
+                            </dt>
+                            <dd class="mt-1 text-gray-900">Desa Digital</dd>
+                          </div>
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-map text-emerald-400 mr-1.5 text-xs"></i>
+                              Kecamatan
+                            </dt>
+                            <dd class="mt-1 text-gray-900">Kecamatan Contoh</dd>
+                          </div>
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-city text-emerald-400 mr-1.5 text-xs"></i>
+                              Kabupaten
+                            </dt>
+                            <dd class="mt-1 text-gray-900">Kabupaten Contoh</dd>
+                          </div>
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-map-marked text-emerald-400 mr-1.5 text-xs"></i>
+                              Provinsi
+                            </dt>
+                            <dd class="mt-1 text-gray-900">Provinsi Contoh</dd>
+                          </div>
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-mail-bulk text-emerald-400 mr-1.5 text-xs"></i>
+                              Kode Pos
+                            </dt>
+                            <dd class="mt-1 text-gray-900">12345</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                    <!-- Contact Information Card -->
+                    <div class="bg-gray-50 shadow-sm rounded-lg overflow-hidden border border-gray-100">
+                      <div class="px-6 py-4 border-b border-gray-100 flex items-center">
+                        <i class="fas fa-address-card text-emerald-500 mr-2"></i>
+                        <h3 class="font-medium text-gray-900">Kontak & Alamat</h3>
+                      </div>
+                      <div class="p-6">
+                        <dl class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-phone-alt text-emerald-400 mr-1.5 text-xs"></i>
+                              Telepon
+                            </dt>
+                            <dd class="mt-1 text-gray-900">
+                              <a href="tel:+6287815454498" class="text-emerald-600 hover:underline flex items-center group">
+                                <span>+62 878 1545 4498</span>
+                                <i class="fas fa-headset ml-1.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                              </a>
+                            </dd>
+                          </div>
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-envelope text-emerald-400 mr-1.5 text-xs"></i>
+                              Email
+                            </dt>
+                            <dd class="mt-1 text-gray-900">
+                              <a href="mailto:cepatberes2024@gmail.com" class="text-emerald-600 hover:underline flex items-center group">
+                                <span>cepatberes2024@gmail.com</span>
+                                <i class="fas fa-paper-plane ml-1.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                              </a>
+                            </dd>
+                          </div>
+                          <div>
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-globe text-emerald-400 mr-1.5 text-xs"></i>
+                              Website
+                            </dt>
+                            <dd class="mt-1 text-gray-900">
+                              <a href="https://desadigital.com/" target="_blank" class="text-emerald-600 hover:underline flex items-center group">
+                                <span>www.desadigital.com</span>
+                                <i class="fas fa-external-link-alt ml-1.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                              </a>
+                            </dd>
+                          </div>
+                          <div class="md:col-span-2">
+                            <dt class="text-sm font-medium text-gray-500 flex items-center">
+                              <i class="fas fa-map-marker-alt text-emerald-400 mr-1.5 text-xs"></i>
+                              Alamat Kantor Desa
+                            </dt>
+                            <dd class="mt-1 text-gray-900">Jl. Desa Digital No. 123, Kecamatan Contoh, Kabupaten Contoh, Provinsi Contoh 12345</dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Visi & Misi Tab -->
+            <div x-show="activeTab === 'vision'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+              <div class="bg-white">
+                <!-- Vision Section -->
+                <div class="mb-8">
+                  <!-- Title Header (Matched with UMKM/Tentang Desa Style) -->
+                  <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center">
+                      <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                      <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                        <i class="fas fa-eye text-emerald-600 mr-1.5"></i>
+                        VISI DESA
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Vision Content with bg-gray-50 -->
+                  <div class="bg-gray-50 shadow-sm rounded-lg overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                      <div class="prose prose-emerald max-w-none text-gray-600">
+                        <p>Mewujudkan Desa Digital yang mandiri, maju, sejahtera, dan berkeadilan melalui tata kelola pemerintahan yang berbasis teknologi digital untuk pelayanan prima kepada masyarakat.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mission Section -->
+                <div class="mb-8">
+                  <!-- Title Header (Matched with UMKM/Tentang Desa Style) -->
+                  <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center">
+                      <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                      <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                        <i class="fas fa-bullseye text-emerald-600 mr-1.5"></i>
+                        MISI DESA
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Mission Content with bg-gray-50 -->
+                  <div class="bg-gray-50 shadow-sm rounded-lg overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                      <div class="prose prose-emerald max-w-none text-gray-600">
+                        <ol>
+                          <li>Meningkatkan kualitas pelayanan pemerintahan desa melalui digitalisasi sistem administrasi dan informasi desa.</li>
+                          <li>Mengembangkan infrastruktur teknologi dan akses internet yang merata untuk seluruh masyarakat desa.</li>
+                          <li>Memberdayakan masyarakat desa melalui pelatihan digital untuk meningkatkan keterampilan dan produktivitas.</li>
+                          <li>Membangun dan mengembangkan ekonomi desa berbasis digital melalui UMKM dan BUMDes.</li>
+                          <li>Meningkatkan kualitas pendidikan, kesehatan, dan kesejahteraan masyarakat desa.</li>
+                          <li>Melestarikan dan mengembangkan potensi sumber daya alam dan budaya desa secara berkelanjutan.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sejarah Desa Tab -->
+            <div x-show="activeTab === 'history'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+              <div class="bg-white">
+                <!-- Title Header (Matched with UMKM/Tentang Desa Style) -->
+                <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center">
+                    <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                    <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                      <i class="fas fa-history text-emerald-600 mr-1.5"></i>
+                      SEJARAH DESA
+                    </span>
+                  </div>
+                </div>
+                <!-- History Content with bg-gray-50 -->
+                <div class="bg-gray-50 shadow-sm rounded-lg overflow-hidden border border-gray-100" data-aos="fade-up">
+                  <div class="p-6">
+                    <div class="prose prose-emerald max-w-none text-gray-600">
+                      <p>
+                        Desa Digital didirikan pada tahun 1950 sebagai bagian dari program pemekaran wilayah pasca kemerdekaan Republik Indonesia. Awalnya, desa ini merupakan desa agraris dengan mayoritas penduduk bekerja sebagai petani dan
+                        peternak.
+                      </p>
+                      <p>
+                        Pada tahun 1970-an, desa ini mulai berkembang dengan pembangunan infrastruktur dasar seperti jalan, listrik, dan fasilitas kesehatan sederhana. Dekade 1980-an dan 1990-an menjadi masa transisi dengan semakin
+                        banyaknya penduduk yang bekerja di luar sektor pertanian.
+                      </p>
+                      <p>
+                        Memasuki tahun 2000-an, Desa Digital mulai menerapkan sistem administrasi terkomputerisasi sederhana. Titik balik terbesar terjadi pada tahun 2015 ketika desa ini terpilih sebagai desa percontohan program "Desa
+                        Digital" yang dicanangkan pemerintah pusat.
+                      </p>
+                      <p>
+                        Program transformasi digital desa dimulai secara intensif pada tahun 2018 dengan pembangunan infrastruktur internet, pelatihan aparatur desa, dan penerapan sistem administrasi berbasis digital. Sejak saat itu, Desa
+                        Digital terus berkembang pesat dan menjadi rujukan bagi desa-desa lain dalam penerapan teknologi untuk pelayanan publik dan pengembangan ekonomi lokal.
+                      </p>
+                      <p>Hingga saat ini, Desa Digital terus berinovasi dalam penerapan teknologi untuk meningkatkan kesejahteraan masyarakat dan kualitas pelayanan publik.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Struktur Pemerintahan Tab -->
+            <div x-show="activeTab === 'structure'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+              <div class="bg-white">
+                <!-- Title Header (Using UMKM/Tentang Desa Style) -->
+                <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center">
+                    <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                    <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                      <i class="fas fa-sitemap text-emerald-600 mr-1.5"></i>
+                      BAGAN STRUKTUR APARAT DESA
+                    </span>
+                  </div>
+                </div>
+                <!-- Bagan Struktur -->
+                <div class="mb-8">
+                  <div class="bg-gray-50 p-3 rounded-lg shadow-sm border border-gray-100">
+                    <img src="src/images/struktur-desa.png" alt="Bagan Struktur Organisasi Desa" class="w-full h-auto object-contain rounded-lg" />
+                  </div>
+                </div>
+                <!-- Aparat Desa Section -->
+                <div class="mt-12" x-data="{ jabatanAktif: 'semua' }">
+                  <!-- Header -->
+                  <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center">
+                      <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                      <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                        <i class="fas fa-users text-emerald-600 mr-1.5"></i>
+                        DAFTAR APARAT DESA
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Filter Kategori Jabatan -->
+                  <div
+                    class="relative mb-6"
+                    x-data="{
+                                    isDragging: false,
+                                    startX: 0,
+                                    scrollLeft: 0,
+                                    handleMouseDown(e) {
+                                        const slider = $refs.slider;
+                                        this.isDragging = true;
+                                        this.startX = e.pageX - slider.offsetLeft;
+                                        this.scrollLeft = slider.scrollLeft;
+                                        slider.classList.add('cursor-grabbing');
+                                    },
+                                    handleMouseMove(e) {
+                                        if(!this.isDragging) return;
+                                        e.preventDefault();
+                                        const slider = $refs.slider;
+                                        const x = e.pageX - slider.offsetLeft;
+                                        const walk = (x - this.startX) * 2;
+                                        slider.scrollLeft = this.scrollLeft - walk;
+                                    },
+                                    handleMouseUp() {
+                                        this.isDragging = false;
+                                        $refs.slider.classList.remove('cursor-grabbing');
+                                    }
+                                }"
+                  >
+                    <div
+                      x-ref="slider"
+                      class="overflow-x-auto py-2 scrollbar-hide cursor-grab active:cursor-grabbing"
+                      style="-webkit-overflow-scrolling: touch"
+                      @mousedown="handleMouseDown"
+                      @mousemove="handleMouseMove"
+                      @mouseup="handleMouseUp"
+                      @mouseleave="handleMouseUp"
+                    >
+                      <div class="inline-flex gap-2 min-w-full px-1 py-1">
+                        <button
+                          @click="jabatanAktif = 'semua'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': jabatanAktif === 'semua', 'bg-white text-gray-700 hover:bg-gray-100': jabatanAktif !== 'semua' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200"
+                        >
+                          <i class="fas fa-users mr-1.5"></i>
+                          Semua
+                        </button>
+                        <button
+                          @click="jabatanAktif = 'Kepala Desa'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': jabatanAktif === 'Kepala Desa', 'bg-white text-gray-700 hover:bg-gray-100': jabatanAktif !== 'Kepala Desa' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200"
+                        >
+                          Kepala Desa
+                        </button>
+                        <button
+                          @click="jabatanAktif = 'Sekretaris Desa'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': jabatanAktif === 'Sekretaris Desa', 'bg-white text-gray-700 hover:bg-gray-100': jabatanAktif !== 'Sekretaris Desa' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200"
+                        >
+                          Sekretaris Desa
+                        </button>
+                        <button
+                          @click="jabatanAktif = 'Kepala Urusan'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': jabatanAktif === 'Kepala Urusan', 'bg-white text-gray-700 hover:bg-gray-100': jabatanAktif !== 'Kepala Urusan' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200"
+                        >
+                          Kepala Urusan
+                        </button>
+                        <button
+                          @click="jabatanAktif = 'Kepala Seksi'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': jabatanAktif === 'Kepala Seksi', 'bg-white text-gray-700 hover:bg-gray-100': jabatanAktif !== 'Kepala Seksi' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200"
+                        >
+                          Kepala Seksi
+                        </button>
+                        <button
+                          @click="jabatanAktif = 'Kepala Dusun'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': jabatanAktif === 'Kepala Dusun', 'bg-white text-gray-700 hover:bg-gray-100': jabatanAktif !== 'Kepala Dusun' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200"
+                        >
+                          Kepala Dusun
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Aparat Grid -->
+                  <div class="relative">
+                    <div x-ref="aparatContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" x-data="{ hoverAparat: null }">
+                      <!-- Kepala Desa -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Desa'"
+                        @mouseenter="hoverAparat = 0"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Muhammad Haikal" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 0, 'opacity-0': hoverAparat !== 0}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 0, 'bottom-[-20px] opacity-0': hoverAparat !== 0}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Desa </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Muhammad Haikal</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Desa</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>S1 Administrasi Pemerintahan</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-phone text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <a href="tel:+6287815454498" class="hover:text-emerald-600 transition-colors">+62 878 1545 4498</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Sekretaris Desa -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Sekretaris Desa'"
+                        @mouseenter="hoverAparat = 1"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Siti Aminah" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 1, 'opacity-0': hoverAparat !== 1}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 1, 'bottom-[-20px] opacity-0': hoverAparat !== 1}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Sekretaris Desa </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Siti Aminah</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Sekretaris Desa</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>S1 Ilmu Pemerintahan</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kepala Urusan Keuangan -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Urusan'"
+                        @mouseenter="hoverAparat = 2"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Ahmad Sudrajat" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 2, 'opacity-0': hoverAparat !== 2}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 2, 'bottom-[-20px] opacity-0': hoverAparat !== 2}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Urusan </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Ahmad Sudrajat</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Urusan Keuangan</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>D3 Akuntansi</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kepala Urusan Umum -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Urusan'"
+                        @mouseenter="hoverAparat = 3"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Rina Walyani" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 3, 'opacity-0': hoverAparat !== 3}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 3, 'bottom-[-20px] opacity-0': hoverAparat !== 3}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Urusan </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Rina Walyani</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Urusan Umum</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>S1 Administrasi Negara</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kepala Seksi Pemerintahan -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Seksi'"
+                        @mouseenter="hoverAparat = 4"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Budi Santoso" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 4, 'opacity-0': hoverAparat !== 4}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 4, 'bottom-[-20px] opacity-0': hoverAparat !== 4}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Seksi </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Budi Santoso</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Seksi Pemerintahan</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>SMA</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kepala Seksi Kesejahteraan -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Seksi'"
+                        @mouseenter="hoverAparat = 5"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Sri Wahyuni" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 5, 'opacity-0': hoverAparat !== 5}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 5, 'bottom-[-20px] opacity-0': hoverAparat !== 5}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Seksi </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Sri Wahyuni</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Seksi Kesejahteraan</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>D3 Kesehatan Masyarakat</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kepala Dusun 1 -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Dusun'"
+                        @mouseenter="hoverAparat = 6"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Eko Prasetyo" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 6, 'opacity-0': hoverAparat !== 6}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 6, 'bottom-[-20px] opacity-0': hoverAparat !== 6}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Dusun </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Eko Prasetyo</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Dusun Suka Maju</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>SMA</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Kepala Dusun 2 -->
+                      <div
+                        x-show="jabatanAktif === 'semua' || jabatanAktif === 'Kepala Dusun'"
+                        @mouseenter="hoverAparat = 7"
+                        @mouseleave="hoverAparat = null"
+                        class="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-md group hover:-translate-y-1 aparat-card"
+                      >
+                        <div class="relative aspect-w-1 aspect-h-1 bg-gray-200">
+                          <img src="src/images/kepala-desa.jpg" alt="Sugeng Riyadi" class="w-full h-full object-cover  transition-transform duration-500" />
+                          <div :class="{'opacity-70': hoverAparat === 7, 'opacity-0': hoverAparat !== 7}" class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-300"></div>
+                          <div :class="{'bottom-0 opacity-100': hoverAparat === 7, 'bottom-[-20px] opacity-0': hoverAparat !== 7}" class="absolute left-0 right-0 p-3 transition-all duration-300">
+                            <span class="inline-block bg-emerald-500 text-white text-xs font-medium px-2.5 py-1 rounded-full"> Kepala Dusun </span>
+                          </div>
+                        </div>
+                        <div class="p-4">
+                          <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Sugeng Riyadi</h4>
+                          <p class="text-emerald-600 font-medium mb-3 text-sm">Kepala Dusun Tugu Makmur</p>
+                          <div class="space-y-3 text-sm text-gray-600">
+                            <div class="flex items-center">
+                              <i class="fas fa-graduation-cap text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>SMA</span>
+                            </div>
+                            <div class="flex items-center">
+                              <i class="fas fa-calendar text-emerald-400 mr-2.5 w-5 text-center flex-shrink-0"></i>
+                              <span>2023 - 2029</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Geografis Desa Tab - Enhanced Modern Design -->
+            <div x-show="activeTab === 'geography'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+              <div class="bg-white overflow-hidden">
+                <!-- Modern Header with Subtitle -->
+                <div class="mb-3">
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                      <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                      <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                        <i class="fas fa-map-marked-alt text-emerald-600 mr-1.5"></i>
+                        GEOGRAFIS DESA
+                      </span>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 ml-3">Informasi mengenai lokasi dan kondisi geografis desa</p>
+                </div>
+                <!-- Map and Info Section - Side by Side on Desktop -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+                  <!-- Interactive Map (Larger on Desktop) -->
+                  <div class="lg:col-span-7 order-2 lg:order-1">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100">
+                      <div class="aspect-w-16 aspect-h-9 md:aspect-h-7">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4157608731784!2d106.8532!3d-6.6003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5d2f9f02917%3A0xfa0651b318f198a2!2sDesa+Digital!5e0!3m2!1sen!2sid!4v1690447353417!5m2!1sen!2sid"
+                          width="100%"
+                          height="100%"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        >
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Information Cards with Tabs - Using Only Available Data Fields -->
+                  <div class="lg:col-span-5 order-1 lg:order-2">
+                    <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 overflow-hidden" x-data="{ activeInfoTab: 'wilayah' }">
+                      <!-- Tab Navigation -->
+                      <div class="flex border-b border-gray-200">
+                        <button
+                          @click="activeInfoTab = 'wilayah'"
+                          :class="{'bg-white text-emerald-600 border-b-2 border-emerald-500': activeInfoTab === 'wilayah', 'text-gray-500 hover:text-gray-700': activeInfoTab !== 'wilayah'}"
+                          class="flex-1 py-3 px-4 text-sm font-medium text-center transition-colors duration-200 focus:outline-none"
+                        >
+                          <i class="fas fa-ruler-combined mr-1.5"></i>
+                          Informasi Wilayah
+                        </button>
+                        <button
+                          @click="activeInfoTab = 'batas'"
+                          :class="{'bg-white text-emerald-600 border-b-2 border-emerald-500': activeInfoTab === 'batas', 'text-gray-500 hover:text-gray-700': activeInfoTab !== 'batas'}"
+                          class="flex-1 py-3 px-4 text-sm font-medium text-center transition-colors duration-200 focus:outline-none"
+                        >
+                          <i class="fas fa-compass mr-1.5"></i>
+                          Batas Wilayah
+                        </button>
+                      </div>
+                      <!-- Area Information Tab -->
+                      <div x-show="activeInfoTab === 'wilayah'" class="p-5">
+                        <div class="flex items-center justify-center">
+                          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 mb-4">
+                            <i class="fas fa-ruler-combined text-xl"></i>
+                          </div>
+                        </div>
+                        <h3 class="text-center text-lg font-medium text-gray-800 mb-4">Luas Wilayah</h3>
+                        <div class="text-center">
+                          <div class="text-2xl font-bold text-emerald-600 mb-1">450,000 m²</div>
+                          <div class="text-gray-500">(45 hektar)</div>
+                        </div>
+                      </div>
+                      <!-- Boundaries Tab -->
+                      <div x-show="activeInfoTab === 'batas'" class="p-5">
+                        <!-- Lingkaran Kompas Style Modern -->
+                        <div class="relative w-full max-w-[300px] mx-auto mb-6" x-data="{ focus: null }">
+                          <!-- Background lingkaran pusat -->
+                          <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-24 h-24 bg-emerald-50 rounded-full border border-emerald-100 flex items-center justify-center z-10">
+                              <div class="text-center">
+                                <i class="fas fa-home-alt text-emerald-600 text-xl mb-1"></i>
+                                <p class="text-xs font-medium text-emerald-800 line-clamp-1">Desa Digital</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Garis dan label arah mata angin -->
+                          <svg class="w-full h-[300px]" viewBox="0 0 200 200">
+                            <g transform="translate(100, 100)">
+                              <!-- Garis kompas -->
+                              <line x1="0" y1="-80" x2="0" y2="-40" stroke="#10b981" stroke-width="2" />
+                              <line x1="0" y1="40" x2="0" y2="80" stroke="#10b981" stroke-width="2" />
+                              <line x1="-80" y1="0" x2="-40" y2="0" stroke="#10b981" stroke-width="2" />
+                              <line x1="40" y1="0" x2="80" y2="0" stroke="#10b981" stroke-width="2" />
+                              <!-- Lingkaran di ujung tiap arah -->
+                              <circle cx="0" cy="-80" r="12" fill="white" stroke="#d1d5db" />
+                              <circle cx="0" cy="80" r="12" fill="white" stroke="#d1d5db" />
+                              <circle cx="-80" cy="0" r="12" fill="white" stroke="#d1d5db" />
+                              <circle cx="80" cy="0" r="12" fill="white" stroke="#d1d5db" />
+                              <!-- Label arah mata angin -->
+                              <text x="0" y="-80" text-anchor="middle" dominant-baseline="middle" class="text-xs font-bold" fill="#047857">U</text>
+                              <text x="0" y="80" text-anchor="middle" dominant-baseline="middle" class="text-xs font-bold" fill="#047857">S</text>
+                              <text x="-80" y="0" text-anchor="middle" dominant-baseline="middle" class="text-xs font-bold" fill="#047857">B</text>
+                              <text x="80" y="0" text-anchor="middle" dominant-baseline="middle" class="text-xs font-bold" fill="#047857">T</text>
+                            </g>
+                          </svg>
+                        </div>
+                        <!-- Tabel Batas Wilayah -->
+                        <div class="max-w-md mx-auto mt-6">
+                          <table class="w-full border-collapse">
+                            <thead class="bg-emerald-50">
+                              <tr>
+                                <th class="px-4 py-2 text-left text-xs font-medium text-emerald-800 border border-gray-200 rounded-tl-lg">Arah</th>
+                                <th class="px-4 py-2 text-left text-xs font-medium text-emerald-800 border border-gray-200 rounded-tr-lg">Berbatasan Dengan</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 border border-gray-200 font-medium text-xs flex items-center"><i class="fas fa-arrow-up text-emerald-500 mr-2"></i>Utara</td>
+                                <td class="px-4 py-3 border border-gray-200 text-sm">Desa Sukamaju</td>
+                              </tr>
+                              <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 border border-gray-200 font-medium text-xs flex items-center"><i class="fas fa-arrow-right text-emerald-500 mr-2"></i>Timur</td>
+                                <td class="px-4 py-3 border border-gray-200 text-sm">Desa Tugu Utara</td>
+                              </tr>
+                              <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 border border-gray-200 font-medium text-xs flex items-center"><i class="fas fa-arrow-down text-emerald-500 mr-2"></i>Selatan</td>
+                                <td class="px-4 py-3 border border-gray-200 text-sm">Desa Cinta Damai</td>
+                              </tr>
+                              <tr class="hover:bg-gray-50">
+                                <td class="px-4 py-3 border border-gray-200 font-medium text-xs flex items-center rounded-bl-lg"><i class="fas fa-arrow-left text-emerald-500 mr-2"></i>Barat</td>
+                                <td class="px-4 py-3 border border-gray-200 text-sm rounded-br-lg">Desa Suka Asih</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Potensi Desa Section - Enhanced Card Design with Fixed Draggable Categories -->
+                <div class="mt-12 mb-10" x-data="{ activeKategori: 'semua' }">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                      <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                      <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                        <i class="fas fa-seedling text-emerald-600 mr-1.5"></i>
+                        POTENSI DESA
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Draggable Filter Categories -->
+                  <div
+                    class="relative mb-6"
+                    x-data="{
+                                isDragging: false,
+                                startX: 0,
+                                scrollLeft: 0,
+                                handleMouseDown(e) {
+                                    const slider = $refs.potensiSlider;
+                                    this.isDragging = true;
+                                    this.startX = e.pageX - slider.offsetLeft;
+                                    this.scrollLeft = slider.scrollLeft;
+                                    slider.classList.add('cursor-grabbing');
+                                },
+                                handleMouseMove(e) {
+                                    if(!this.isDragging) return;
+                                    e.preventDefault();
+                                    const slider = $refs.potensiSlider;
+                                    const x = e.pageX - slider.offsetLeft;
+                                    const walk = (x - this.startX) * 2;
+                                    slider.scrollLeft = this.scrollLeft - walk;
+                                },
+                                handleMouseUp() {
+                                    this.isDragging = false;
+                                    $refs.potensiSlider.classList.remove('cursor-grabbing');
+                                }
+                            }"
+                  >
+                    <div
+                      x-ref="potensiSlider"
+                      class="overflow-x-auto py-2 scrollbar-hide cursor-grab active:cursor-grabbing"
+                      style="-webkit-overflow-scrolling: touch"
+                      @mousedown="handleMouseDown"
+                      @mousemove="handleMouseMove"
+                      @mouseup="handleMouseUp"
+                      @mouseleave="handleMouseUp"
+                    >
+                      <div class="inline-flex gap-2 min-w-full px-1 py-1">
+                        <button
+                          @click="activeKategori = 'semua'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': activeKategori === 'semua', 'bg-white text-gray-700 hover:bg-gray-100': activeKategori !== 'semua' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                        >
+                          <i class="fas fa-th-large mr-1.5 text-xs"></i>
+                          Semua Potensi
+                        </button>
+                        <button
+                          @click="activeKategori = 'sda'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': activeKategori === 'sda', 'bg-white text-gray-700 hover:bg-gray-100': activeKategori !== 'sda' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                        >
+                          <i class="fas fa-water mr-1.5 text-xs"></i>
+                          Sumber Daya Alam
+                        </button>
+                        <button
+                          @click="activeKategori = 'pertanian'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': activeKategori === 'pertanian', 'bg-white text-gray-700 hover:bg-gray-100': activeKategori !== 'pertanian' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                        >
+                          <i class="fas fa-seedling mr-1.5 text-xs"></i>
+                          Pertanian
+                        </button>
+                        <button
+                          @click="activeKategori = 'industri'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': activeKategori === 'industri', 'bg-white text-gray-700 hover:bg-gray-100': activeKategori !== 'industri' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                        >
+                          <i class="fas fa-industry mr-1.5 text-xs"></i>
+                          Industri/UMKM
+                        </button>
+                        <button
+                          @click="activeKategori = 'pariwisata'"
+                          :class="{ 'bg-emerald-600 text-white shadow-md': activeKategori === 'pariwisata', 'bg-white text-gray-700 hover:bg-gray-100': activeKategori !== 'pariwisata' }"
+                          class="shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                        >
+                          <i class="fas fa-umbrella-beach mr-1.5 text-xs"></i>
+                          Pariwisata
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Potensi Cards -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- Potensi Item 1 -->
+                    <div
+                      x-show="activeKategori === 'semua' || activeKategori === 'sda'"
+                      x-transition:enter="transition ease-out duration-200"
+                      x-transition:enter-start="opacity-0 transform scale-95"
+                      x-transition:enter-end="opacity-100 transform scale-100"
+                      class="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100 group hover:shadow-md transition-all duration-300"
+                    >
+                      <div class="p-4 border-l-4 border-blue-500 text-blue-600 bg-white flex items-center">
+                        <i class="fas fa-water mr-3 text-lg"></i>
+                        <h4 class="text-lg font-medium text-gray-800 line-clamp-1">Sumber Mata Air Alami</h4>
+                      </div>
+                      <div class="p-4">
+                        <div class="mb-3">
+                          <span class="text-xs font-medium bg-white px-2.5 py-1 rounded-full border border-gray-200 border-blue-500 text-blue-600"> Sumber Daya Alam </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-3">Sumber mata air alami dengan debit air yang stabil sepanjang tahun. Dimanfaatkan untuk kebutuhan air bersih desa dan pertanian.</p>
+                        <div class="flex items-start text-xs text-gray-500 pt-2 mt-2 border-t border-gray-100">
+                          <i class="fas fa-map-marker-alt mt-0.5 mr-2"></i>
+                          <span class="flex-1">Dusun Suka Maju, Sebelah Utara Desa</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Potensi Item 2 -->
+                    <div
+                      x-show="activeKategori === 'semua' || activeKategori === 'pertanian'"
+                      x-transition:enter="transition ease-out duration-200"
+                      x-transition:enter-start="opacity-0 transform scale-95"
+                      x-transition:enter-end="opacity-100 transform scale-100"
+                      class="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100 group hover:shadow-md transition-all duration-300"
+                    >
+                      <div class="p-4 border-l-4 border-green-500 text-green-600 bg-white flex items-center">
+                        <i class="fas fa-seedling mr-3 text-lg"></i>
+                        <h4 class="text-lg font-medium text-gray-800 line-clamp-1">Lahan Pertanian Organik</h4>
+                      </div>
+                      <div class="p-4">
+                        <div class="mb-3">
+                          <span class="text-xs font-medium bg-white px-2.5 py-1 rounded-full border border-gray-200 border-green-500 text-green-600"> Pertanian </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-3">Area pertanian organik seluas 5 hektar yang menghasilkan sayuran dan buah-buahan organik berkualitas tinggi. Sudah mendapatkan sertifikasi organik nasional.</p>
+                        <div class="flex items-start text-xs text-gray-500 pt-2 mt-2 border-t border-gray-100">
+                          <i class="fas fa-map-marker-alt mt-0.5 mr-2"></i>
+                          <span class="flex-1">Dusun Tugu Makmur, Sebelah Timur Desa</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Potensi Item 3 -->
+                    <div
+                      x-show="activeKategori === 'semua' || activeKategori === 'pertanian'"
+                      x-transition:enter="transition ease-out duration-200"
+                      x-transition:enter-start="opacity-0 transform scale-95"
+                      x-transition:enter-end="opacity-100 transform scale-100"
+                      class="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100 group hover:shadow-md transition-all duration-300"
+                    >
+                      <div class="p-4 border-l-4 border-green-500 text-green-600 bg-white flex items-center">
+                        <i class="fas fa-seedling mr-3 text-lg"></i>
+                        <h4 class="text-lg font-medium text-gray-800 line-clamp-1">Budidaya Ikan Air Tawar</h4>
+                      </div>
+                      <div class="p-4">
+                        <div class="mb-3">
+                          <span class="text-xs font-medium bg-white px-2.5 py-1 rounded-full border border-gray-200 border-green-500 text-green-600"> Pertanian </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-3">Kolam budidaya ikan air tawar seperti lele, nila, dan gurame dengan sistem bioflok modern yang ramah lingkungan.</p>
+                        <div class="flex items-start text-xs text-gray-500 pt-2 mt-2 border-t border-gray-100">
+                          <i class="fas fa-map-marker-alt mt-0.5 mr-2"></i>
+                          <span class="flex-1">Dusun Suka Maju, Dekat Balai Desa</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Potensi Item 4 -->
+                    <div
+                      x-show="activeKategori === 'semua' || activeKategori === 'industri'"
+                      x-transition:enter="transition ease-out duration-200"
+                      x-transition:enter-start="opacity-0 transform scale-95"
+                      x-transition:enter-end="opacity-100 transform scale-100"
+                      class="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100 group hover:shadow-md transition-all duration-300"
+                    >
+                      <div class="p-4 border-l-4 border-slate-500 text-slate-600 bg-white flex items-center">
+                        <i class="fas fa-industry mr-3 text-lg"></i>
+                        <h4 class="text-lg font-medium text-gray-800 line-clamp-1">Sentra Kerajinan Bambu</h4>
+                      </div>
+                      <div class="p-4">
+                        <div class="mb-3">
+                          <span class="text-xs font-medium bg-white px-2.5 py-1 rounded-full border border-gray-200 border-slate-500 text-slate-600"> Industri/UMKM </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-3">Kelompok pengrajin bambu yang memproduksi berbagai kerajinan berkualitas ekspor. Telah memasarkan produk hingga ke luar negeri.</p>
+                        <div class="flex items-start text-xs text-gray-500 pt-2 mt-2 border-t border-gray-100">
+                          <i class="fas fa-map-marker-alt mt-0.5 mr-2"></i>
+                          <span class="flex-1">Dusun Tugu Makmur, RT 03/RW 02</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Potensi Item 5 -->
+                    <div
+                      x-show="activeKategori === 'semua' || activeKategori === 'pariwisata'"
+                      x-transition:enter="transition ease-out duration-200"
+                      x-transition:enter-start="opacity-0 transform scale-95"
+                      x-transition:enter-end="opacity-100 transform scale-100"
+                      class="bg-gray-50 rounded-lg overflow-hidden shadow-sm border border-gray-100 group hover:shadow-md transition-all duration-300"
+                    >
+                      <div class="p-4 border-l-4 border-purple-500 text-purple-600 bg-white flex items-center">
+                        <i class="fas fa-umbrella-beach mr-3 text-lg"></i>
+                        <h4 class="text-lg font-medium text-gray-800 line-clamp-1">Desa Wisata Digital</h4>
+                      </div>
+                      <div class="p-4">
+                        <div class="mb-3">
+                          <span class="text-xs font-medium bg-white px-2.5 py-1 rounded-full border border-gray-200 border-purple-500 text-purple-600"> Pariwisata </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-3">
+                          Konsep desa wisata dengan tema digitalisasi. Pengunjung dapat melihat aplikasi teknologi digital dalam kehidupan desa dan berinteraksi dengan berbagai inovasi digital.
+                        </p>
+                        <div class="flex items-start text-xs text-gray-500 pt-2 mt-2 border-t border-gray-100">
+                          <i class="fas fa-map-marker-alt mt-0.5 mr-2"></i>
+                          <span class="flex-1">Seluruh wilayah desa dengan pusat di Balai Desa</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Empty State Message (Hidden by Default) -->
+                    <div x-show="!document.querySelectorAll('[x-show*=\'activeKategori\']:not([style*=\'display: none\'])').length" x-cloak class="col-span-full bg-gray-50 p-6 rounded-lg text-center border border-gray-100 mt-4">
+                      <div class="inline-flex items-center justify-center p-3 bg-gray-100 rounded-full mb-3">
+                        <i class="fas fa-seedling text-gray-300"></i>
+                      </div>
+                      <p class="text-gray-500 text-sm">Tidak ada potensi desa dalam kategori ini</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Enhanced Footer -->
+      <footer class="bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-200">
+        <!-- Back to top button -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <button
+            id="back-to-top"
+            class="absolute -top-5 right-8 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-400 opacity-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+        </div>
+        <!-- Main footer content -->
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kolom 1: Tentang Desa (larger size) -->
+            <div class="md:col-span-1 lg:col-span-1">
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Tentang Desa</h3>
+              <div class="mt-5">
+                <img src="src/images/logo-desa.jpg" alt="Desa Digital" class="h-16 w-auto mb-4 object-contain" />
+                <p class="text-lg text-gray-700 font-medium mb-2">Desa Digital</p>
+                <p class="mt-3 text-sm text-gray-500 flex items-center group">
+                  <span class="flex items-center justify-center bg-emerald-100 text-emerald-500 h-8 w-8 rounded-full mr-3 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="group-hover:text-emerald-600 transition duration-300">+62 878 1545 4498</span>
+                </p>
+                <p class="mt-2 text-sm text-gray-500 flex items-center group">
+                  <span class="flex items-center justify-center bg-emerald-100 text-emerald-500 h-8 w-8 rounded-full mr-3 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="group-hover:text-emerald-600 transition duration-300">cepatberes2024@gmail.com</span>
+                </p>
+              </div>
+            </div>
+            <!-- Kolom 2: Link Cepat -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Akses Cepat</h3>
+              <ul class="mt-5 space-y-3">
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='index.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Beranda
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='profile.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Profil Desa
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='berita.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Berita
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='umkm.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    UMKM
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='statistik.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Statistik Desa
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Kolom 3: Layanan (5 daftar layanan) -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Layanan Desa</h3>
+              <ul class="mt-5 space-y-3">
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='layanan.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Administrasi Desa
+                  </a>
+                </li>
+                <li>
+                  <a href="pengaduan.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Pengaduan Warga
+                  </a>
+                </li>
+                <li>
+                  <a href="bantuan.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Cek Bantuan Sosial
+                  </a>
+                </li>
+                <li>
+                  <a href="layanan-publik.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Pelayanan Publik
+                  </a>
+                </li>
+                <li>
+                  <a href="dokumen.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Permohonan Dokumen
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Updated Copyright section -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between items-center">
+              <p class="text-sm text-gray-500 mb-4 md:mb-0">&copy; 2023 Desa Digital. Hak Cipta Dilindungi.</p>
+              <!-- Social Media Icons -->
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-twitter text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-youtube text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript Dependencies -->
+    <script src="npm/alpinejs-3.13.1/dist/cdn.min.js" defer></script>
+    <script src="npm/swiper-10/swiper-bundle.min.js"></script>
+    <script src="npm/sweetalert2-11.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>

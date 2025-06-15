@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="csrf-token" content="" />
+    <!-- SEO Tags -->
+    <title>Statistik - Desa Digital</title>
+    <meta name="description" content="Visualisasi data statistik Desa Digital dalam bentuk grafik dan angka" />
+    <meta name="keywords" content="statistik desa, kependudukan, keuangan desa, bantuan sosial, inventaris desa, visualisasi data" />
+    <meta name="author" content="Desa Digital" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Statistik - Desa Digital" />
+    <meta property="og:description" content="Visualisasi data statistik Desa Digital dalam bentuk grafik dan angka" />
+    <meta property="og:image"  />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Statistik - Desa Digital" />
+    <meta name="twitter:description" content="Visualisasi data statistik Desa Digital dalam bentuk grafik dan angka" />
+    <meta name="twitter:image"  />
+    <!-- Favicon -->
+    <link rel="icon"  type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180"  />
+    <link rel="icon" type="image/png" sizes="32x32"  />
+    <link rel="icon" type="image/png" sizes="16x16"  />
+    <meta name="theme-color" content="#047857" />
+    <!-- Fonts - Upgraded with modern combinations -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Base Stylesheet -->
+    <link href="src/css/output.css" rel="stylesheet" />
+    <!-- Additional Styles -->
+    <link rel="stylesheet" href="ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="npm/aos-2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="npm/aos-2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="npm/swiper-10/swiper-bundle.min.css" />
+  </head>
+  <body class="font-sans antialiased bg-gray-50">
+    <!-- Subtle background pattern using SVG instead of image -->
+    <div class="fixed inset-0 -z-10 bg-dots-pattern opacity-10"></div>
+    <div class="min-h-screen flex flex-col">
+      <!-- Enhanced Header/Navigation -->
+      <header class="fixed top-0 z-50 w-full header-nav">
+        <!-- Navigation content goes here -->
+        <nav x-data="{ mobileMenuOpen: false, scrolled: false }" @scroll.window="scrolled = window.pageYOffset > 20" class="sticky top-0 z-50 bg-white shadow-sm py-2 transition-all duration-200" :class="{ 'py-1 shadow-md': scrolled }">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+              <!-- Logo dengan efek hover -->
+              <div class="flex items-center">
+                <a class='flex items-center transition-transform hover:-translate-y-0.5 duration-200' href='index.html'>
+                  <div class="flex items-center">
+                    <span class="text-emerald-600 font-bold text-2xl mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="text-emerald-600 font-bold text-xl">Desa Digital</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Desktop Navigation Links -->
+              <div class="hidden lg:flex lg:items-center">
+                <div class="flex items-center space-x-6 mr-8">
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='index.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                        />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Beranda </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='profile.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Profil </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='berita.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Berita </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='umkm.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> UMKM </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='layanan.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-transparent text-gray-600 group-hover:text-emerald-500 group-hover:border-emerald-300 transition duration-200"> Layanan </span>
+                  </a>
+                  <a class='flex items-center space-x-1.5 text-sm font-medium group' href='statistik.html'>
+                    <span class="text-emerald-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                        />
+                      </svg>
+                    </span>
+                    <span class="py-2 px-1 border-b-2 border-emerald-500 text-emerald-600 font-semibold transition duration-200"> Statistik </span>
+                  </a>
+                </div>
+                <!-- Login/Register Buttons -->
+                <div class="flex items-center border-l border-gray-200 pl-6 ml-6 space-x-4">
+                  <a class='text-sm font-medium px-5 py-2 text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 border border-emerald-200 rounded-lg transition-colors duration-200' href='login.html'> Masuk </a>
+                  <a class='text-sm font-medium px-5 py-2 text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm hover:shadow transition-all duration-200' href='register.html'> Daftar </a>
+                </div>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="lg:hidden">
+                <button
+                  @click="mobileMenuOpen = !mobileMenuOpen"
+                  class="inline-flex items-center justify-center p-2 rounded-lg text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500 transition duration-150"
+                >
+                  <span class="sr-only">Buka menu</span>
+                  <svg class="h-6 w-6" :class="{'hidden': mobileMenuOpen, 'block': !mobileMenuOpen}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                  <svg class="h-6 w-6" :class="{'block': mobileMenuOpen, 'hidden': !mobileMenuOpen}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Navigation Menu -->
+          <div
+            class="lg:hidden fixed inset-x-0 z-40 bg-white border-t border-gray-200 mt-2 shadow-lg"
+            x-show="mobileMenuOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-10"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-10"
+            x-cloak
+          >
+            <div class="pt-2 pb-3 space-y-1">
+              <!-- Menu item dengan ikon -->
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='index.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                <span class="text-base font-medium">Beranda</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='profile.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-base font-medium">Profil Desa</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='berita.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
+                <span class="text-base font-medium">Berita</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='umkm.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span class="text-base font-medium">UMKM</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-emerald-600 transition-colors rounded-lg mx-2' href='layanan.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span class="text-base font-medium">Layanan</span>
+              </a>
+              <a class='flex items-center pl-3 pr-4 py-3 bg-emerald-50 text-emerald-700 transition-colors rounded-lg mx-2' href='statistik.html'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
+                </svg>
+                <span class="text-base font-medium">Statistik</span>
+              </a>
+              <!-- Mobile Authentication Links dengan Style yang Diperbarui -->
+              <div class="pt-4 pb-3 border-t border-gray-200 mt-2">
+                <!-- Mobile Login/Register Buttons -->
+                <div class="grid grid-cols-1 gap-3 px-3 mt-3">
+                  <a class='flex justify-center items-center px-4 py-3 border-2 border-emerald-200 text-base font-medium rounded-lg text-emerald-600 bg-white hover:bg-emerald-50 transition-colors' href='login.html'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                    </svg>
+                    Masuk
+                  </a>
+                  <a class='flex justify-center items-center px-4 py-3 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-emerald-600 hover:bg-emerald-700 transition-colors' href='register.html'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                    </svg>
+                    Daftar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Breadcrumbs -->
+      <div class="bg-white py-1 border-gray-100 mt-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav class="py-2" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm">
+              <li>
+                <a class='flex items-center text-gray-500 hover:text-emerald-600 transition-colors duration-200' href='index.html'>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  Beranda
+                </a>
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <div class="flex items-center text-emerald-600 font-medium">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
+                  Statistik Desa
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- Interactive CTA-Style Header Section -->
+      <section class="pt-12 pb-16 bg-gradient-to-br from-emerald-600 to-emerald-900 relative overflow-hidden">
+        <!-- Subtle Background Element -->
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full translate-x-1/3 translate-y-1/3"></div>
+        <!-- Content Container -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center">
+            <!-- Interactive Badge with Hover Effect -->
+            <div
+              class="relative inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-emerald-600/30 to-emerald-700/30 backdrop-blur-lg border border-white/30 shadow-xl group overflow-hidden cursor-pointer"
+              data-aos="fade-down"
+              onclick="document.getElementById('section-kependudukan').scrollIntoView({behavior: 'smooth'})"
+            >
+              <!-- Moving Light Effect on Hover -->
+              <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-all duration-1000 ease-in-out"></span>
+              <!-- Badge Content -->
+              <div class="relative z-10 flex items-center">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full mr-2.5 animate-pulse"></div>
+                <span class="text-white font-semibold text-sm tracking-wider">DATA VISUALISASI</span>
+              </div>
+            </div>
+            <!-- Main Title with Interactive Element -->
+            <h1 class="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-white group" data-aos="fade-up">
+              <span class="relative inline-block">
+                Statistik Desa Digital
+                <span class="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-300 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              </span>
+            </h1>
+            <!-- Description with Fade In Effect -->
+            <p class="mt-4 max-w-2xl mx-auto text-emerald-50 text-lg opacity-90" data-aos="fade-up" data-aos-delay="100">Data dan perkembangan desa dalam bentuk visualisasi yang informatif</p>
+          </div>
+        </div>
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden" style="height: 60px">
+          <svg class="absolute bottom-0 w-full h-full" viewBox="0 0 1440 120" preserveAspectRatio="none" fill="white">
+            <path
+              d="M0,96L60,85.3C120,75,240,53,360,48C480,43,600,53,720,69.3C840,85,960,107,1080,101.3C1200,96,1320,64,1380,48L1440,32L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <!-- Simplified Tab Navigation Section -->
+      <section class="pb-3 bg-white" id="statistik-tabs">
+        <div class="max-w-7xl pt-4 mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Modern Header -->
+          <div class="mb-3">
+            <!-- Title Row -->
+            <div class="flex items-center mb-3">
+              <div class="flex items-center">
+                <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+                <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                  <i class="fas fa-chart-bar text-emerald-600 mr-1.5"></i>
+                  KATEGORI DATA
+                </span>
+              </div>
+            </div>
+            <!-- Description on Full Row -->
+            <p class="text-gray-600 text-sm md:text-base w-full mb-3">Pilih kategori data untuk melihat statistik desa dalam berbagai aspek</p>
+          </div>
+          <!-- Update the tab navigation section with the following code -->
+          <div class="relative">
+            <div class="overflow-x-auto py-2 scrollbar-hide" id="tab-slider" style="-webkit-overflow-scrolling: touch; -ms-overflow-style: none; scrollbar-width: none">
+              <style>
+                .scrollbar-hide::-webkit-scrollbar {
+                  display: none;
+                }
+                .cursor-grabbing {
+                  cursor: grabbing;
+                }
+              </style>
+              <div class="inline-flex gap-2 min-w-full px-1 py-1" data-aos="fade-up">
+                <button
+                  type="button"
+                  id="tab-kependudukan"
+                  class="tab-button active bg-emerald-600 text-white shrink-0 px-4 py-2.5 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                  data-target="kependudukan"
+                >
+                  <i class="fas fa-users mr-1.5 text-xs"></i> Kependudukan
+                </button>
+                <button
+                  type="button"
+                  id="tab-keuangan"
+                  class="tab-button bg-gray-50 text-gray-700 hover:bg-gray-100 hover:text-gray-800 shrink-0 px-4 py-2.5 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                  data-target="keuangan"
+                >
+                  <i class="fas fa-money-bill-wave mr-1.5 text-xs"></i> Keuangan
+                </button>
+                <button
+                  type="button"
+                  id="tab-bansos"
+                  class="tab-button bg-gray-50 text-gray-700 hover:bg-gray-100 hover:text-gray-800 shrink-0 px-4 py-2.5 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                  data-target="bansos"
+                >
+                  <i class="fas fa-hands-helping mr-1.5 text-xs"></i> Bantuan Sosial
+                </button>
+                <button
+                  type="button"
+                  id="tab-inventaris"
+                  class="tab-button bg-gray-50 text-gray-700 hover:bg-gray-100 hover:text-gray-800 shrink-0 px-4 py-2.5 rounded-full text-sm font-medium transition-colors border border-gray-200 flex items-center"
+                  data-target="inventaris"
+                >
+                  <i class="fas fa-boxes mr-1.5 text-xs"></i> Inventaris Desa
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content Sections -->
+      <section class="pb-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Kependudukan Section -->
+          <div id="section-kependudukan" class="tab-content">
+            <!-- Modern Header for Kependudukan Section -->
+            <div class="flex items-center mb-6" data-aos="fade-up">
+              <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+              <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                <i class="fas fa-users text-emerald-600 mr-1.5"></i>
+                KEPENDUDUKAN DESA
+              </span>
+            </div>
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
+              <!-- Total Penduduk Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5 flex items-start" data-aos="fade-up">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-emerald-100 mr-4">
+                  <i class="fas fa-users text-xl text-emerald-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-medium text-gray-500">Total Penduduk</h3>
+                  <div class="text-2xl font-bold text-emerald-500 mt-1">5,218</div>
+                  <p class="text-xs text-gray-500 mt-1">Jumlah warga terdaftar di desa</p>
+                </div>
+              </div>
+              <!-- Rasio Gender Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5 flex items-start" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-indigo-100 mr-4">
+                  <i class="fas fa-venus-mars text-xl text-indigo-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-medium text-gray-500">Rasio Gender</h3>
+                  <div class="text-2xl font-bold mt-1">
+                    <span class="text-indigo-600">52%</span>
+                    <span class="text-gray-400 mx-1">:</span>
+                    <span class="text-pink-500">48%</span>
+                  </div>
+                  <p class="text-xs text-gray-500 mt-1">Perbandingan laki-laki dan perempuan</p>
+                </div>
+              </div>
+              <!-- Total Kepala Keluarga Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5 flex items-start" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-orange-100 mr-4">
+                  <i class="fas fa-home text-xl text-orange-500"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-medium text-gray-500">Kepala Keluarga</h3>
+                  <div class="text-2xl font-bold text-orange-500 mt-1">1,345</div>
+                  <p class="text-xs text-gray-500 mt-1">Total KK terdaftar di desa</p>
+                </div>
+              </div>
+            </div>
+            <!-- Modern Header for Charts Section -->
+            <div class="flex items-center mb-4" data-aos="fade-up">
+              <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+              <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                <i class="fas fa-chart-pie text-emerald-600 mr-1.5"></i>
+                GRAFIK DEMOGRAFI
+              </span>
+            </div>
+            <!-- Charts -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5" data-aos="fade-up">
+                <h3 class="text-gray-700 font-semibold mb-4 flex items-center">
+                  <i class="fas fa-chart-pie text-indigo-500 mr-2"></i>
+                  Distribusi Jenis Kelamin
+                </h3>
+                <div id="gender-chart" class="w-full h-[300px] xs:h-[320px] sm:h-[350px]"></div>
+              </div>
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-gray-700 font-semibold mb-4 flex items-center">
+                  <i class="fas fa-chart-bar text-blue-500 mr-2"></i>
+                  Kelompok Umur
+                </h3>
+                <div id="age-chart" class="w-full h-[300px] xs:h-[320px] sm:h-[350px]"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5" data-aos="fade-up">
+                <h3 class="text-gray-700 font-semibold mb-4 flex items-center">
+                  <i class="fas fa-graduation-cap text-green-500 mr-2"></i>
+                  Tingkat Pendidikan
+                </h3>
+                <div id="education-chart" class="w-full h-[300px] xs:h-[320px] sm:h-[350px]"></div>
+              </div>
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-gray-700 font-semibold mb-4 flex items-center">
+                  <i class="fas fa-briefcase text-amber-500 mr-2"></i>
+                  Pekerjaan
+                </h3>
+                <div id="occupation-chart" class="w-full h-[300px] xs:h-[320px] sm:h-[350px]"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Keuangan Section dengan Filter Dropdown Modern -->
+          <div id="section-keuangan" class="tab-content hidden">
+            <!-- Header Modern dengan Title -->
+            <div class="flex items-center mb-1" data-aos="fade-up">
+              <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+              <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                <i class="fas fa-chart-line text-emerald-600 mr-1.5"></i>
+                KEUANGAN DESA
+              </span>
+            </div>
+            <!-- Description and Filter Row -->
+            <div class="flex justify-between items-center mt-1 mb-3 gap-3">
+              <p class="text-gray-600 text-sm md:text-base truncate max-w-[60%] sm:max-w-[70%]">Statistik keuangan desa<span class="hidden sm:inline"> dalam berbagai periode</span></p>
+            </div>
+            <!-- Stats Overview Cards - Simplified Modern Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8" id="keuangan-stats-container">
+              <!-- Total Pemasukan Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Total Pemasukan</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(16, 185, 129, 0.1)">
+                    <i class="fas fa-arrow-up text-emerald-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-emerald-500" id="total-pemasukan">Rp 2.500.000.000</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Seluruh pemasukan desa</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Total Pengeluaran Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Total Pengeluaran</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(239, 68, 68, 0.1)">
+                    <i class="fas fa-arrow-down text-red-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-red-500" id="total-pengeluaran">Rp 1.800.000.000</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Seluruh pengeluaran desa</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Saldo Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Saldo Desa</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(59, 130, 246, 0.1)">
+                    <i class="fas fa-wallet text-blue-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-blue-500" id="saldo-desa">Rp 700.000.000</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5" id="periode-text">Saldo keuangan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Informasi Keuangan - Simplified -->
+            <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 mb-6" data-aos="fade-up">
+              <div class="p-4">
+                <div class="flex items-center mb-4">
+                  <h3 class="text-sm md:text-base font-medium text-gray-800"><i class="fas fa-info-circle text-emerald-600 mr-2"></i> Informasi Keuangan</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Pemasukan Terbaru -->
+                  <div class="bg-white rounded-lg p-4 shadow-sm border border-green-100">
+                    <h4 class="font-medium text-emerald-600 mb-2 flex items-center text-sm md:text-base"><i class="fas fa-arrow-up text-emerald-600 mr-2"></i> Transaksi Pemasukan Terbesar</h4>
+                    <div id="top-pemasukan" class="text-emerald-500 text-sm md:text-base">
+                      <div class="font-semibold text-lg">Rp 1.200.000.000</div>
+                      <div class="text-sm">Dana Desa Tahun Anggaran 2023</div>
+                      <div class="text-xs text-gray-500">12 Januari 2023</div>
+                    </div>
+                  </div>
+                  <!-- Pengeluaran Terbaru -->
+                  <div class="bg-white rounded-lg p-4 shadow-sm border border-red-100">
+                    <h4 class="font-medium text-red-600 mb-2 flex items-center text-sm md:text-base"><i class="fas fa-arrow-down text-red-600 mr-2"></i> Transaksi Pengeluaran Terbesar</h4>
+                    <div id="top-pengeluaran" class="text-red-500 text-sm md:text-base">
+                      <div class="font-semibold text-lg">Rp 500.000.000</div>
+                      <div class="text-sm">Pembangunan Jalan Desa</div>
+                      <div class="text-xs text-gray-500">25 Februari 2023</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Ringkasan Status - Simplified -->
+            <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100" data-aos="fade-up">
+              <div class="p-4">
+                <div class="flex items-center mb-4">
+                  <h3 class="text-sm md:text-base font-medium text-gray-800"><i class="fas fa-chart-line text-emerald-600 mr-2"></i> Ringkasan Status Keuangan</h3>
+                </div>
+                <div class="flex flex-col gap-3" id="status-keuangan">
+                  <!-- Saldo status - akan berubah warna berdasarkan kondisi -->
+                  <div id="saldo-status-container" class="p-3 bg-white rounded-lg border border-emerald-100 flex items-start">
+                    <i id="saldo-icon" class="fas fa-info-circle text-emerald-500 mt-0.5 mr-2.5"></i>
+                    <span id="saldo-status" class="block text-emerald-500 font-medium text-sm md:text-base">Kondisi keuangan desa dalam keadaan surplus sebesar Rp 700.000.000</span>
+                  </div>
+                  <!-- Trend status - akan berubah warna berdasarkan kondisi -->
+                  <div id="trend-status-container" class="p-3 bg-white rounded-lg border border-emerald-100 flex items-start">
+                    <i id="trend-icon" class="fas fa-chart-line text-emerald-500 mt-0.5 mr-2.5"></i>
+                    <span id="trend-status" class="block text-emerald-500 text-sm md:text-base">Tren keuangan positif. Pemasukan lebih besar dari pengeluaran.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bansos Section -->
+          <div id="section-bansos" class="tab-content hidden">
+            <!-- Header Modern dengan Title -->
+            <div class="flex items-center mb-6" data-aos="fade-up">
+              <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+              <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                <i class="fas fa-hands-helping text-emerald-600 mr-1.5"></i>
+                BANTUAN SOSIAL
+              </span>
+            </div>
+            <!-- Stats Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mb-4" id="bansos-stats-container">
+              <!-- Total Pengajuan Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Total Pengajuan</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(59, 130, 246, 0.1)">
+                    <i class="fas fa-file-alt text-blue-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-blue-500" id="total-pengajuan">245</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Seluruh pengajuan bantuan</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Dalam Proses Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Dalam Proses</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(245, 158, 11, 0.1)">
+                    <i class="fas fa-clock text-amber-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-amber-500" id="total-proses">42</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Pengajuan sedang diproses</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bantuan Diterima Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Sudah Diterima</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(16, 185, 129, 0.1)">
+                    <i class="fas fa-check-circle text-emerald-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-emerald-500" id="total-diterima">183</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Bantuan telah disalurkan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Second Row Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <!-- Ditolak Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Ditolak</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(239, 68, 68, 0.1)">
+                    <i class="fas fa-times-circle text-red-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-red-500" id="total-ditolak">20</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Pengajuan tidak memenuhi syarat</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Total Dana Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Total Dana Tersalurkan</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(124, 58, 237, 0.1)">
+                    <i class="fas fa-money-bill-wave text-purple-600"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-purple-600" id="total-dana">Rp 456.750.000</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Dana bantuan yang sudah diberikan</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Rata-rata Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Rata-rata Bantuan</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(14, 165, 233, 0.1)">
+                    <i class="fas fa-calculator text-sky-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-sky-500" id="rata-bantuan">Rp 2.495.000</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Rata-rata nilai setiap bantuan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- NIK Checker Section -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100 mb-8" data-aos="fade-up">
+              <div class="bg-gradient-to-r from-emerald-600 to-teal-500 rounded-t-lg p-4">
+                <h3 class="text-white font-medium text-lg flex items-center"><i class="fas fa-id-card mr-2"></i> Cek Status Bantuan Sosial</h3>
+                <p class="text-white text-sm md:text-base opacity-90 mt-1">Masukkan NIK atau nama untuk mengecek status bantuan sosial yang diterima</p>
+              </div>
+              <div class="p-5">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-3 mb-4">
+                  <div class="md:col-span-5">
+                    <div class="relative">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fas fa-id-card text-gray-400"></i>
+                      </div>
+                      <input type="text" id="nik-input" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full pl-10 p-2.5" placeholder="Masukkan NIK..." />
+                    </div>
+                  </div>
+                  <div class="md:col-span-5">
+                    <div class="relative">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fas fa-user text-gray-400"></i>
+                      </div>
+                      <input type="text" id="nama-input" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full pl-10 p-2.5" placeholder="Atau masukkan nama..." />
+                    </div>
+                  </div>
+                  <div class="md:col-span-2">
+                    <button type="button" id="cek-bantuan-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg px-5 py-2.5 transition-colors flex items-center justify-center">
+                      <i class="fas fa-search mr-1.5"></i> Cek Status
+                    </button>
+                  </div>
+                </div>
+                <!-- No Results State (Default) -->
+                <div id="no-results" class="text-center py-8">
+                  <div class="mx-auto flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 mb-4">
+                    <i class="fas fa-search text-2xl text-gray-400"></i>
+                  </div>
+                  <p class="text-gray-600">Masukkan NIK atau nama untuk melihat informasi bantuan sosial</p>
+                </div>
+                <!-- Results State (Hidden by default) -->
+                <div id="results-container" class="hidden">
+                  <div class="flex items-center mb-4 border-b border-gray-100 pb-4">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mr-4">
+                      <i class="fas fa-user text-xl text-emerald-600"></i>
+                    </div>
+                    <div>
+                      <div class="text-lg font-semibold text-gray-800" id="result-name">Nama Lengkap</div>
+                      <div class="text-sm text-gray-600" id="result-nik">NIK: 3509123456789012</div>
+                    </div>
+                  </div>
+                  <div id="bantuan-list" class="space-y-4">
+                    <!-- Bantuan Item 1 (Example) -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                      <div class="flex justify-between items-start">
+                        <h4 class="font-medium text-gray-800">Bantuan Langsung Tunai (BLT)</h4>
+                        <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">Aktif</span>
+                      </div>
+                      <p class="text-sm text-gray-600 mt-1">Bantuan tunai untuk masyarakat terdampak COVID-19</p>
+                      <div class="mt-3 flex justify-between text-sm">
+                        <div>
+                          <span class="text-gray-500">Jumlah:</span>
+                          <span class="font-medium text-gray-800">Rp 300.000 / bulan</span>
+                        </div>
+                        <div>
+                          <span class="text-gray-500">Periode:</span>
+                          <span class="font-medium text-gray-800">Jan - Jun 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Bantuan Item 2 (Example) -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                      <div class="flex justify-between items-start">
+                        <h4 class="font-medium text-gray-800">Program Keluarga Harapan (PKH)</h4>
+                        <span class="px-2 py-1 bg-amber-100 text-amber-700 text-xs font-medium rounded-full">Dalam Proses</span>
+                      </div>
+                      <p class="text-sm text-gray-600 mt-1">Bantuan untuk keluarga miskin dengan anak sekolah</p>
+                      <div class="mt-3 flex justify-between text-sm">
+                        <div>
+                          <span class="text-gray-500">Jumlah:</span>
+                          <span class="font-medium text-gray-800">Rp 2.400.000 / tahun</span>
+                        </div>
+                        <div>
+                          <span class="text-gray-500">Status:</span>
+                          <span class="font-medium text-amber-600">Verifikasi Dokumen</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Daftar Bansos Section -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100" data-aos="fade-up">
+              <div class="p-4 border-b border-gray-100">
+                <h3 class="text-gray-800 font-medium text-lg"><i class="fas fa-list-ul text-emerald-600 mr-2"></i> Program Bantuan Sosial</h3>
+                <p class="text-gray-600 text-sm mt-1">Daftar program bantuan sosial yang tersedia di desa</p>
+              </div>
+              <div class="p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Program 1 -->
+                  <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition">
+                    <div class="flex items-start">
+                      <div class="flex-shrink-0 h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-money-bill text-emerald-600"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-lg font-medium text-gray-800">Bantuan Langsung Tunai (BLT)</h4>
+                        <p class="text-gray-600 text-sm mt-1">Program bantuan tunai untuk masyarakat terdampak ekonomi</p>
+                        <div class="mt-2 flex items-center">
+                          <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-medium">Aktif</span>
+                          <span class="text-gray-500 text-xs ml-3">185 penerima</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Program 2 -->
+                  <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition">
+                    <div class="flex items-start">
+                      <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-graduation-cap text-blue-600"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-lg font-medium text-gray-800">Program Keluarga Harapan (PKH)</h4>
+                        <p class="text-gray-600 text-sm mt-1">Bantuan untuk keluarga miskin dengan anak sekolah</p>
+                        <div class="mt-2 flex items-center">
+                          <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium">Aktif</span>
+                          <span class="text-gray-500 text-xs ml-3">98 penerima</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Program 3 -->
+                  <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition">
+                    <div class="flex items-start">
+                      <div class="flex-shrink-0 h-10 w-10 rounded-full bg-amber-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-shopping-basket text-amber-600"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-lg font-medium text-gray-800">Sembako Murah</h4>
+                        <p class="text-gray-600 text-sm mt-1">Program subsidi sembako untuk masyarakat berpenghasilan rendah</p>
+                        <div class="mt-2 flex items-center">
+                          <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">Aktif</span>
+                          <span class="text-gray-500 text-xs ml-3">120 penerima</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Program 4 -->
+                  <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:shadow-md transition">
+                    <div class="flex items-start">
+                      <div class="flex-shrink-0 h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-house-user text-purple-600"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-lg font-medium text-gray-800">Rumah Tidak Layak Huni (RTLH)</h4>
+                        <p class="text-gray-600 text-sm mt-1">Program perbaikan rumah untuk masyarakat berpenghasilan rendah</p>
+                        <div class="mt-2 flex items-center">
+                          <span class="text-xs bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full font-medium">Tidak Aktif</span>
+                          <span class="text-gray-500 text-xs ml-3">15 penerima</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Inventaris Section -->
+          <div id="section-inventaris" class="tab-content hidden">
+            <!-- Header Modern dengan Title -->
+            <div class="flex items-center mb-1" data-aos="fade-up">
+              <div class="h-6 w-1 bg-emerald-500 rounded-full mr-2"></div>
+              <span class="bg-emerald-50 px-2.5 py-1 rounded-full text-emerald-800 text-sm font-semibold flex items-center">
+                <i class="fas fa-boxes text-emerald-600 mr-1.5"></i>
+                INVENTARIS DESA
+              </span>
+            </div>
+            <!-- Description and Filter Row -->
+            <div class="flex justify-between items-center mb-6 mt-1 gap-3">
+              <p class="text-gray-600 text-sm md:text-base truncate max-w-[60%] sm:max-w-[70%]">Informasi aset dan inventaris<span class="hidden sm:inline"> milik desa</span></p>
+              <!-- Search Box -->
+              <div class="relative shrink-0">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <i class="fas fa-search text-gray-400"></i>
+                </div>
+                <input
+                  type="text"
+                  id="inventaris-search"
+                  class="bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full pl-10 pr-3 py-2 shadow-sm"
+                  placeholder="Cari inventaris..."
+                />
+              </div>
+            </div>
+            <!-- Stats Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+              <!-- Total Aset Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Total Aset</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(59, 130, 246, 0.1)">
+                    <i class="fas fa-box text-blue-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-blue-500" id="total-aset">324</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Jumlah inventaris</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Nilai Aset Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Nilai Aset</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(16, 185, 129, 0.1)">
+                    <i class="fas fa-dollar-sign text-emerald-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-emerald-500" id="nilai-aset">Rp 2.5 M</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Total nilai inventaris</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Aset Baik Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Kondisi Baik</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(16, 185, 129, 0.1)">
+                    <i class="fas fa-check-circle text-emerald-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-emerald-500" id="aset-baik">245</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Aset kondisi baik</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Aset Rusak Card -->
+              <div class="bg-gray-50 rounded-lg shadow-sm border border-gray-100 p-5" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-gray-500 text-sm md:text-base font-medium mb-2">Butuh Perbaikan</h3>
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center mr-3" style="background-color: rgba(239, 68, 68, 0.1)">
+                    <i class="fas fa-tools text-red-500"></i>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-red-500" id="aset-rusak">79</div>
+                    <p class="text-gray-500 text-xs md:text-sm mt-0.5">Aset perlu diperbaiki</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Inventaris Table Section -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden mb-8" data-aos="fade-up">
+              <div class="p-4 border-b border-gray-100 flex justify-between items-center flex-wrap gap-3">
+                <h3 class="text-gray-800 font-medium text-lg"><i class="fas fa-table text-emerald-600 mr-2"></i> Daftar Inventaris Desa</h3>
+                <!-- Filter Buttons -->
+                <div class="flex gap-2">
+                  <button type="button" data-filter="semua" class="filter-btn active bg-emerald-500 hover:bg-emerald-600 text-white text-sm px-3 py-1.5 rounded-full transition-colors">Semua</button>
+                  <button type="button" data-filter="tanah" class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1.5 rounded-full transition-colors">Tanah</button>
+                  <button type="button" data-filter="gedung" class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1.5 rounded-full transition-colors">Gedung</button>
+                  <button type="button" data-filter="kendaraan" class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1.5 rounded-full transition-colors">Kendaraan</button>
+                  <button type="button" data-filter="peralatan" class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm px-3 py-1.5 rounded-full transition-colors hidden md:block">Peralatan</button>
+                </div>
+              </div>
+              <!-- Table Container with Horizontal Scroll for Mobile -->
+              <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                  <thead class="bg-gray-50">
+                    <tr>
+                      <th scope="col" class="px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Nama Aset</th>
+                      <th scope="col" class="px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Kategori</th>
+                      <th scope="col" class="px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Tahun Perolehan</th>
+                      <th scope="col" class="px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Nilai</th>
+                      <th scope="col" class="px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">Kondisi</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white divide-y divide-gray-200" id="inventaris-table-body">
+                    <!-- Row 1 -->
+                    <tr class="hover:bg-gray-50 transition" data-category="tanah">
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-amber-100 flex items-center justify-center">
+                            <i class="fas fa-mountain text-amber-600"></i>
+                          </div>
+                          <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Tanah Balai Desa</div>
+                            <div class="text-xs text-gray-500">Aset No. TN-001</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-amber-100 text-amber-800">Tanah</span>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2005</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rp 500.000.000</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-emerald-100 text-emerald-800">Baik</span>
+                      </td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr class="hover:bg-gray-50 transition" data-category="gedung">
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i class="fas fa-building text-blue-600"></i>
+                          </div>
+                          <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Gedung Balai Desa</div>
+                            <div class="text-xs text-gray-500">Aset No. GD-001</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-blue-100 text-blue-800">Gedung</span>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2010</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rp 750.000.000</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-emerald-100 text-emerald-800">Baik</span>
+                      </td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr class="hover:bg-gray-50 transition" data-category="kendaraan">
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center">
+                            <i class="fas fa-car text-indigo-600"></i>
+                          </div>
+                          <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Mobil Dinas Kepala Desa</div>
+                            <div class="text-xs text-gray-500">Aset No. KD-001</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-indigo-100 text-indigo-800">Kendaraan</span>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2018</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rp 235.000.000</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-emerald-100 text-emerald-800">Baik</span>
+                      </td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr class="hover:bg-gray-50 transition" data-category="peralatan">
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-purple-100 flex items-center justify-center">
+                            <i class="fas fa-desktop text-purple-600"></i>
+                          </div>
+                          <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Komputer Kantor</div>
+                            <div class="text-xs text-gray-500">Aset No. PR-005</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-purple-100 text-purple-800">Peralatan</span>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2021</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rp 8.500.000</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-emerald-100 text-emerald-800">Baik</span>
+                      </td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr class="hover:bg-gray-50 transition" data-category="kendaraan">
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center">
+                            <i class="fas fa-motorcycle text-indigo-600"></i>
+                          </div>
+                          <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Motor Dinas</div>
+                            <div class="text-xs text-gray-500">Aset No. KD-003</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-indigo-100 text-indigo-800">Kendaraan</span>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2019</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rp 18.500.000</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-red-100 text-red-800">Rusak Ringan</span>
+                      </td>
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr class="hover:bg-gray-50 transition" data-category="gedung">
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i class="fas fa-school text-blue-600"></i>
+                          </div>
+                          <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-900">Gedung PAUD Desa</div>
+                            <div class="text-xs text-gray-500">Aset No. GD-003</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-blue-100 text-blue-800">Gedung</span>
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2015</td>
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Rp 350.000.000</td>
+                      <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 py-0.5 inline-flex text-xs leading-5 font-medium rounded-full bg-red-100 text-red-800">Butuh Renovasi</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Pagination -->
+              <div class="bg-gray-50 px-4 py-4 border-t border-gray-200">
+                <!-- Desktop Pagination -->
+                <div class="hidden sm:flex sm:flex-col">
+                  <!-- Buttons Row -->
+                  <div class="flex items-center justify-center gap-2 mb-3">
+                    <!-- Previous Page Button -->
+                    <span class="relative inline-flex items-center justify-center w-10 h-10 text-sm opacity-50 bg-white border rounded-full text-gray-400 cursor-not-allowed select-none">
+                      <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <!-- Page Numbers -->
+                    <a href="#" class="relative inline-flex items-center justify-center w-10 h-10 text-sm font-bold text-white bg-emerald-600 border border-emerald-600 rounded-full shadow-sm select-none"> 1 </a>
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center w-10 h-10 text-sm text-gray-700 transition-colors bg-white border rounded-full shadow-sm hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600"
+                    >
+                      2
+                    </a>
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center w-10 h-10 text-sm text-gray-700 transition-colors bg-white border rounded-full shadow-sm hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600"
+                    >
+                      3
+                    </a>
+                    <span aria-disabled="true" class="relative inline-flex items-center justify-center w-10 h-10 text-sm text-gray-700 bg-white border rounded-full select-none"> ... </span>
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center w-10 h-10 text-sm text-gray-700 transition-colors bg-white border rounded-full shadow-sm hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600"
+                    >
+                      4
+                    </a>
+                    <!-- Next Page Button -->
+                    <a
+                      href="#"
+                      class="relative inline-flex items-center justify-center w-10 h-10 text-sm text-gray-700 transition-colors bg-white border rounded-full shadow-sm hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600"
+                    >
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                  <!-- Page Statistics -->
+                  <div class="text-center text-sm text-gray-700">
+                    <p>
+                      Menampilkan
+                      <span class="font-medium">1</span>
+                      sampai
+                      <span class="font-medium">6</span>
+                      dari
+                      <span class="font-medium">24</span>
+                      inventaris
+                    </p>
+                  </div>
+                </div>
+                <!-- Mobile Pagination -->
+                <div class="flex sm:hidden flex-col items-center gap-3">
+                  <div class="flex w-full justify-between">
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-full text-gray-700 bg-white hover:bg-emerald-50 hover:border-emerald-300 hover:text-emerald-600">
+                      <i class="fas fa-chevron-left mr-1"></i> Sebelumnya
+                    </a>
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-full text-gray-700 bg-white hover:bg-emerald-50 hover:border-emerald-300 hover:text-emerald-600">
+                      Berikutnya <i class="fas fa-chevron-right ml-1"></i>
+                    </a>
+                  </div>
+                  <!-- Mobile Page Statistics -->
+                  <div class="text-center text-sm text-gray-700">
+                    <p>Halaman 1 dari 4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Enhanced Footer -->
+      <footer class="bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-200">
+        <!-- Back to top button -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <button
+            id="back-to-top"
+            class="absolute -top-5 right-8 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-400 opacity-0"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+        </div>
+        <!-- Main footer content -->
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kolom 1: Tentang Desa (larger size) -->
+            <div class="md:col-span-1 lg:col-span-1">
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Tentang Desa</h3>
+              <div class="mt-5">
+                <img src="src/images/logo-desa.jpg" alt="Desa Digital" class="h-16 w-auto mb-4 object-contain" />
+                <p class="text-lg text-gray-700 font-medium mb-2">Desa Digital</p>
+                <p class="mt-3 text-sm text-gray-500 flex items-center group">
+                  <span class="flex items-center justify-center bg-emerald-100 text-emerald-500 h-8 w-8 rounded-full mr-3 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                  <span class="group-hover:text-emerald-600 transition duration-300">+62 878 1545 4498</span>
+                </p>
+                <p class="mt-2 text-sm text-gray-500 flex items-center group">
+                  <span class="flex items-center justify-center bg-emerald-100 text-emerald-500 h-8 w-8 rounded-full mr-3 group-hover:bg-emerald-500 group-hover:text-white transition duration-300">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="group-hover:text-emerald-600 transition duration-300">cepatberes2024@gmail.com</span>
+                </p>
+              </div>
+            </div>
+            <!-- Kolom 2: Link Cepat -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Akses Cepat</h3>
+              <ul class="mt-5 space-y-3">
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='index.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Beranda
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='profile.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Profil Desa
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='berita.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Berita
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='umkm.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    UMKM
+                  </a>
+                </li>
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='statistik.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Statistik Desa
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Kolom 3: Layanan (5 daftar layanan) -->
+            <div>
+              <h3 class="text-sm font-semibold text-gray-600 tracking-wider uppercase relative inline-block after:absolute after:w-1/2 after:h-0.5 after:bg-emerald-500 after:bottom-0 after:left-0 pb-1">Layanan Desa</h3>
+              <ul class="mt-5 space-y-3">
+                <li>
+                  <a class='text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group' href='layanan.html'>
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Administrasi Desa
+                  </a>
+                </li>
+                <li>
+                  <a href="pengaduan.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Pengaduan Warga
+                  </a>
+                </li>
+                <li>
+                  <a href="bantuan.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Cek Bantuan Sosial
+                  </a>
+                </li>
+                <li>
+                  <a href="layanan-publik.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Pelayanan Publik
+                  </a>
+                </li>
+                <li>
+                  <a href="dokumen.html" class="text-base text-gray-600 hover:text-emerald-600 flex items-center transition duration-300 group">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2 group-hover:w-3 transition-all duration-300"></span>
+                    Permohonan Dokumen
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Updated Copyright section -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row md:justify-between items-center">
+              <p class="text-sm text-gray-500 mb-4 md:mb-0">&copy; 2023 Desa Digital. Hak Cipta Dilindungi.</p>
+              <!-- Social Media Icons -->
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-facebook-f text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-twitter text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors">
+                  <i class="fab fa-youtube text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Include ApexCharts.js -->
+    <script src="npm/apexcharts.js"></script>
+    <script src="npm/alpinejs-3.13.1/dist/cdn.min.js" defer></script>
+    <!-- Include AOS (Animate on Scroll) library -->
+    <script src="npm/aos-2.3.4/dist/aos.js"></script>
+    <script src="src/js/main.js" type="module"></script>
+    <!-- JavaScript for Chart Renderings and UI Interactions -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // ============================================================
+        // TAB NAVIGATION FUNCTIONALITY
+        // ============================================================
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+        const tabSlider = document.getElementById("tab-slider") || document.querySelector(".scrollbar-hide");
+        // Tab click functionality
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            // Only process if not from a drag event or if drag distance is minimal
+            if (!this.moveDistance || this.moveDistance < 10) {
+              // Remove active class from all tabs
+              tabButtons.forEach((btn) => {
+                btn.classList.remove("active", "bg-emerald-600", "text-white");
+                btn.classList.add("bg-gray-50", "text-gray-700", "hover:bg-gray-100", "hover:text-gray-800");
+              });
+              // Add active class to clicked tab
+              this.classList.add("active", "bg-emerald-600", "text-white");
+              this.classList.remove("bg-gray-50", "text-gray-700", "hover:bg-gray-100", "hover:text-gray-800");
+              // Hide all tab contents
+              tabContents.forEach((content) => {
+                content.classList.add("hidden");
+              });
+              // Show the selected tab content
+              const targetId = `section-${this.dataset.target}`;
+              document.getElementById(targetId).classList.remove("hidden");
+              // Trigger resize to ensure charts render correctly after tab change
+              window.dispatchEvent(new Event("resize"));
+            }
+          });
+        });
+        // Tab slider drag functionality
+        if (tabSlider) {
+          // Add ID if it doesn't exist for easier reference
+          if (!tabSlider.id) tabSlider.id = "tab-slider";
+          let isDragging = false;
+          let startX;
+          let scrollLeft;
+          let moveDistance = 0;
+          // Start dragging function
+          const startDragging = function (e) {
+            isDragging = true;
+            tabSlider.classList.add("cursor-grabbing");
+            startX = e.type === "touchstart" ? e.touches[0].pageX : e.pageX;
+            scrollLeft = tabSlider.scrollLeft;
+            moveDistance = 0;
+          };
+          // Stop dragging function
+          const stopDragging = function () {
+            isDragging = false;
+            tabSlider.classList.remove("cursor-grabbing");
+          };
+          // Move while dragging function
+          const move = function (e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.type === "touchmove" ? e.touches[0].pageX : e.pageX;
+            const distance = x - startX;
+            moveDistance += Math.abs(distance);
+            tabSlider.scrollLeft = scrollLeft - distance;
+            // Store moveDistance on each tab button to prevent click activation on drag
+            tabButtons.forEach((btn) => {
+              btn.moveDistance = moveDistance;
+            });
+          };
+          // Mouse Events
+          tabSlider.addEventListener("mousedown", startDragging);
+          tabSlider.addEventListener("mousemove", move);
+          tabSlider.addEventListener("mouseup", stopDragging);
+          tabSlider.addEventListener("mouseleave", stopDragging);
+          // Touch Events for mobile
+          tabSlider.addEventListener("touchstart", startDragging);
+          tabSlider.addEventListener("touchmove", move);
+          tabSlider.addEventListener("touchend", stopDragging);
+          // Reset moveDistance after a short delay
+          tabSlider.addEventListener("mouseup", function () {
+            setTimeout(() => {
+              tabButtons.forEach((btn) => {
+                btn.moveDistance = 0;
+              });
+            }, 300);
+          });
+        }
+        // ============================================================
+        // CHART INITIALIZATION
+        // ============================================================
+        // Gender Chart
+        const genderChartOptions = {
+          series: [52, 48],
+          chart: {
+            type: "donut",
+            height: 350,
+          },
+          labels: ["Laki-laki", "Perempuan"],
+          colors: ["#4f46e5", "#ec4899"],
+          plotOptions: {
+            pie: {
+              donut: {
+                size: "55%",
+                labels: {
+                  show: true,
+                  total: {
+                    show: true,
+                    label: "Total",
+                    formatter: function (w) {
+                      return "5,218";
+                    },
+                  },
+                },
+              },
+            },
+          },
+          legend: {
+            position: "bottom",
+          },
+          responsive: [
+            {
+              breakpoint: 480,
+              options: {
+                chart: {
+                  height: 280,
+                },
+                legend: {
+                  position: "bottom",
+                },
+              },
+            },
+          ],
+          tooltip: {
+            y: {
+              formatter: function (val) {
+                return val + "%";
+              },
+            },
+          },
+        };
+        // Age Chart
+        const ageChartOptions = {
+          series: [
+            {
+              name: "Jumlah Penduduk",
+              data: [312, 485, 965, 1345, 1220, 615, 276],
+            },
+          ],
+          chart: {
+            type: "bar",
+            height: 350,
+            toolbar: {
+              show: false,
+            },
+          },
+          colors: ["#0ea5e9"],
+          plotOptions: {
+            bar: {
+              borderRadius: 4,
+              horizontal: false,
+              columnWidth: "60%",
+              distributed: false,
+              dataLabels: {
+                position: "top",
+              },
+            },
+          },
+          dataLabels: {
+            enabled: false,
+          },
+          xaxis: {
+            categories: ["0-5", "6-18", "19-30", "31-45", "46-60", "61-75", "75+"],
+            title: {
+              text: "Kelompok Umur (tahun)",
+            },
+          },
+          yaxis: {
+            title: {
+              text: "Jumlah Penduduk",
+            },
+            labels: {
+              formatter: function (val) {
+                return val.toFixed(0);
+              },
+            },
+          },
+          tooltip: {
+            y: {
+              formatter: function (val) {
+                return val + " orang";
+              },
+            },
+          },
+        };
+        // Education Chart
+        const educationChartOptions = {
+          series: [
+            {
+              name: "Jumlah Penduduk",
+              data: [145, 420, 1250, 1855, 965, 423, 160],
+            },
+          ],
+          chart: {
+            type: "bar",
+            height: 350,
+            toolbar: {
+              show: false,
+            },
+          },
+          colors: ["#22c55e"],
+          plotOptions: {
+            bar: {
+              borderRadius: 4,
+              horizontal: false,
+              columnWidth: "60%",
+              distributed: false,
+            },
+          },
+          dataLabels: {
+            enabled: false,
+          },
+          xaxis: {
+            categories: ["Tidak Sekolah", "SD", "SMP", "SMA/SMK", "D3", "S1", "S2/S3"],
+            title: {
+              text: "Tingkat Pendidikan",
+            },
+          },
+          yaxis: {
+            title: {
+              text: "Jumlah Penduduk",
+            },
+            labels: {
+              formatter: function (val) {
+                return val.toFixed(0);
+              },
+            },
+          },
+          tooltip: {
+            y: {
+              formatter: function (val) {
+                return val + " orang";
+              },
+            },
+          },
+        };
+        // Occupation Chart
+        const occupationChartOptions = {
+          series: [
+            {
+              name: "Jumlah Penduduk",
+              data: [1250, 850, 650, 520, 420, 380, 345, 803],
+            },
+          ],
+          chart: {
+            type: "bar",
+            height: 350,
+            toolbar: {
+              show: false,
+            },
+          },
+          colors: ["#f59e0b"],
+          plotOptions: {
+            bar: {
+              borderRadius: 4,
+              horizontal: false,
+              columnWidth: "60%",
+              distributed: false,
+            },
+          },
+          dataLabels: {
+            enabled: false,
+          },
+          xaxis: {
+            categories: ["Petani", "Pedagang", "Swasta", "PNS", "Guru", "Buruh", "Wirausaha", "Lainnya"],
+            title: {
+              text: "Jenis Pekerjaan",
+            },
+          },
+          yaxis: {
+            title: {
+              text: "Jumlah Penduduk",
+            },
+            labels: {
+              formatter: function (val) {
+                return val.toFixed(0);
+              },
+            },
+          },
+          tooltip: {
+            y: {
+              formatter: function (val) {
+                return val + " orang";
+              },
+            },
+          },
+        };
+        // Initialize charts if elements exist
+        if (document.getElementById("gender-chart")) {
+          const genderChart = new ApexCharts(document.getElementById("gender-chart"), genderChartOptions);
+          genderChart.render();
+        }
+        if (document.getElementById("age-chart")) {
+          const ageChart = new ApexCharts(document.getElementById("age-chart"), ageChartOptions);
+          ageChart.render();
+        }
+        if (document.getElementById("education-chart")) {
+          const educationChart = new ApexCharts(document.getElementById("education-chart"), educationChartOptions);
+          educationChart.render();
+        }
+        if (document.getElementById("occupation-chart")) {
+          const occupationChart = new ApexCharts(document.getElementById("occupation-chart"), occupationChartOptions);
+          occupationChart.render();
+        }
+        // ============================================================
+        // BANTUAN SOSIAL FUNCTIONALITY
+        // ============================================================
+        const cekBantuanBtn = document.getElementById("cek-bantuan-btn");
+        const nikInput = document.getElementById("nik-input");
+        const namaInput = document.getElementById("nama-input");
+        const noResults = document.getElementById("no-results");
+        const resultsContainer = document.getElementById("results-container");
+        const resultName = document.getElementById("result-name");
+        const resultNik = document.getElementById("result-nik");
+        if (cekBantuanBtn) {
+          cekBantuanBtn.addEventListener("click", function () {
+            if (nikInput.value || namaInput.value) {
+              // Show loading state
+              cekBantuanBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-1.5"></i> Mencari...';
+              cekBantuanBtn.disabled = true;
+              setTimeout(() => {
+                // Display results
+                noResults.classList.add("hidden");
+                resultsContainer.classList.remove("hidden");
+                // Set demo data
+                resultName.textContent = namaInput.value || "Nama Lengkap";
+                resultNik.textContent = "NIK: " + (nikInput.value || "3509123456789012");
+                // Reset button
+                cekBantuanBtn.innerHTML = '<i class="fas fa-search mr-1.5"></i> Cek Status';
+                cekBantuanBtn.disabled = false;
+              }, 1200);
+            } else {
+              alert("Harap masukkan NIK atau nama untuk melakukan pencarian");
+            }
+          });
+        }
+        // ============================================================
+        // INVENTARIS FUNCTIONALITY
+        // ============================================================
+        // Inventaris Search
+        const inventarisSearch = document.getElementById("inventaris-search");
+        const inventarisTableRows = document.querySelectorAll("#inventaris-table-body tr");
+        if (inventarisSearch) {
+          inventarisSearch.addEventListener("input", function () {
+            const searchTerm = this.value.toLowerCase();
+            inventarisTableRows.forEach((row) => {
+              const name = row.querySelector("td:first-child").textContent.toLowerCase();
+              if (name.includes(searchTerm)) {
+                row.classList.remove("hidden");
+              } else {
+                row.classList.add("hidden");
+              }
+            });
+          });
+        }
+        // Inventaris Filter Buttons
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        if (filterButtons.length > 0) {
+          filterButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              // Remove active class from all filter buttons
+              filterButtons.forEach((btn) => {
+                btn.classList.remove("active", "bg-emerald-500", "text-white");
+                btn.classList.add("bg-gray-100", "text-gray-700");
+              });
+              // Add active class to clicked button
+              this.classList.add("active", "bg-emerald-500", "text-white");
+              this.classList.remove("bg-gray-100", "text-gray-700");
+              const filterValue = this.getAttribute("data-filter");
+              const tableRows = document.querySelectorAll("#inventaris-table-body tr");
+              tableRows.forEach((row) => {
+                if (filterValue === "semua") {
+                  row.classList.remove("hidden");
+                } else {
+                  if (row.getAttribute("data-category") === filterValue) {
+                    row.classList.remove("hidden");
+                  } else {
+                    row.classList.add("hidden");
+                  }
+                }
+              });
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
